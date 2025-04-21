@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Selamat Datang di Flask!</h1>
+    <p>Ini adalah halaman utama aplikasi Flask pertama saya.</p>
+    <a href="{{ url_for('about') }}">Tentang Kami</a>
+</body>
+</html>
