@@ -1,14 +1,52 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
+import pandas as pd
 
 app = Flask(__name__)
 
-@app.route('/')
-def home():
-    return render_template('dashboard.html', title='Halaman Utama')
+# Load data CSV saat server start
+try:
+    df = pd.read_csv('data/reviews_flip_2025.csv')  # Ganti nama file sesuai kebutuhan
+    # Tambahkan kolom category berdasarkan score
+    def classify_sentiment(score):
+        if score >= 4:
+            return 'Baik'
+        elif score == 3:
+            return 'Netral'
+        else:
+            return 'Buruk'
 
-@app.route('/about')
-def about():
-    return '<h1>Tentang Kami</h1><p>Ini adalah halaman tentang kami.</p>'
+    df['category'] = df['score'].apply(classify_sentiment)
+
+except Exception as e:
+    df = None
+    print(f"Error loading CSV: {e}")
+
+@app.route('/')
+def index():
+    return render_template('index.html')
+
+@app.route('/reviews')
+def reviews():
+    if df is not None:
+        reviews_data = df[['userName', 'score', 'content', 'category']].to_dict(orient='records')
+        return render_template('reviews.html', reviews=reviews_data)
+    else:
+        return "Data tidak tersedia."
+
+@app.route('/visualize')
+def visualize():
+    if df is not None:
+        if 'category' not in df.columns:
+            return "Kolom 'category' tidak ditemukan di data."
+
+        # Hitung jumlah setiap kategori
+        category_counts = df['category'].value_counts().to_dict()
+        labels = list(category_counts.keys())
+        values = list(category_counts.values())
+
+        return render_template('visualize.html', labels=labels, values=values)
+    else:
+        return "Data tidak tersedia."
 
 if __name__ == '__main__':
     app.run(debug=True)

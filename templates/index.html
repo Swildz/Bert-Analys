@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <title>Flip Sentiment Analysis</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Selamat Datang di Aplikasi Sentimen Analisys</h1>
-    <p>Ini adalah halaman utama aplikasi</p>
-    <a href="{{ url_for('about') }}">Tentang Kami</a>
+    <h1>Selamat Datang di Analisis Sentimen Flip!</h1>
+    <div class="menu">
+        <a href="/reviews">Lihat Data Ulasan</a>
+        <a href="/visualize">Lihat Visualisasi Sentimen</a>
+    </div>
 </body>
 </html>
