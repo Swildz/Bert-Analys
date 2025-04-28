@@ -117,6 +117,14 @@
         </div>
       </div>
 
+      <form action="{{ url_for('visualize') }}" method="get">
+        <label for="method">Select Classification Method:</label>
+        <select name="method" id="method">
+            <option value="score" {% if method == 'score' %}selected{% endif %}>Manual Classification</option>
+            <option value="bert" {% if method == 'bert' %}selected{% endif %}>BERT Classification</option>
+        </select>
+        <button type="submit">Filter</button>
+    </form>
     <div class="search-container">
       <form method="GET" action="{{ url_for('visualize') }}">
         <input
@@ -128,27 +136,26 @@
         <button type="submit">Cari</button>
       </form>
     </div>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Nama User</th>
-          <th>Skor</th>
-          <th>Isi Ulasan</th>
-          <th>Kategori</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for review in reviews %}
-        <tr>
-          <td>{{ review['userName'] }}</td>
-          <td>{{ review['score'] }}</td>
-          <td>{{ review['content'] }}</td>
-          <td>{{ review['category'] }}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
+      <table>
+        <thead>
+          <tr>
+              <th>Nama User</th>
+              <th>Skor Angka</th>
+              <th>Isi Review</th>
+              <th>Kategori</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for review in reviews %}
+            <tr>
+                <td>{{ review['userName'] }}</td>
+                <td>{{ review['score'] }}</td>
+                <td>{{ review['content'] }}</td>
+                <td>{{ review['category'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+      </table>
 
     <script>
       // Warna untuk kategori
