@@ -83,6 +83,12 @@
         border: none;
         cursor: pointer;
       }
+      .no-data {
+        text-align: center;
+        padding: 20px;
+        color: #666;
+        font-style: italic;
+      }
       @media (max-width: 900px) {
         .chart-container {
           flex-direction: column;
@@ -98,65 +104,81 @@
 
     <a href="/" class="back-link">← Kembali ke Halaman Utama</a>
     
-    <div class="chart-container">
-      <!-- Grafik Pie untuk Flip -->
-      <div class="chart-wrapper">
-        <h2>Flip - Grafik Pie</h2>
-        <div class="chart-box">
-          <canvas id="flipPieChart"></canvas>
+    {% if not data_available %}
+      <div class="no-data">
+        <p>Data tidak tersedia untuk ditampilkan.</p>
+      </div>
+    {% else %}
+      <div class="chart-container">
+        <!-- Grafik Pie untuk Flip -->
+        <div class="chart-wrapper">
+          <h2>Flip - Grafik Pie</h2>
+          <div class="chart-box">
+            <canvas id="flipPieChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Grafik Batang untuk Flip -->
+        <div class="chart-wrapper">
+          <h2>Flip - Grafik Batang</h2>
+          <div class="chart-box">
+            <canvas id="flipBarChart"></canvas>
+          </div>
         </div>
       </div>
 
-
-    <div class="chart-container">
-      <!-- Grafik Batang untuk Flip -->
-      <div class="chart-wrapper">
-        <h2>Flip - Grafik Batang</h2>
-        <div class="chart-box">
-          <canvas id="flipBarChart"></canvas>
-        </div>
+      <div class="search-container">
+        <form method="GET" action="{{ url_for('visualize') }}">
+          <input
+            type="text"
+            name="search"
+            placeholder="Cari ulasan..."
+            value="{{ search_query if search_query else '' }}"
+          />
+          <button type="submit">Cari</button>
+        </form>
       </div>
-    </div>
 
-    <div class="search-container">
-      <form method="GET" action="{{ url_for('visualize') }}">
-        <input
-          type="text"
-          name="search"
-          placeholder="Cari ulasan..."
-          value="{{ search_query }}"
-        />
-        <button type="submit">Cari</button>
-      </form>
-    </div>
+      {% if reviews %}
+        <table>
+          <thead>
+            <tr>
+              <th>Nama User</th>
+              <th>Skor</th>
+              <th>Isi Ulasan</th>
+              <th>Kategori (Manual/BERT)</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for review in reviews %}
+            <tr>
+              <td>{{ review.userName }}</td>
+              <td>{{ review.score }}</td>
+              <td>{{ review.content }}</td>
+              <td>
+                Manual: {{ review.category }}<br>
+                BERT: {{ review.category_bert }}
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% else %}
+        <div class="no-data">
+          <p>Tidak ada ulasan yang sesuai dengan pencarian.</p>
+        </div>
+      {% endif %}
+    {% endif %}
 
-    <table>
-      <thead>
-        <tr>
-          <th>Nama User</th>
-          <th>Skor</th>
-          <th>Isi Ulasan</th>
-          <th>Kategori</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for review in reviews %}
-        <tr>
-          <td>{{ review['userName'] }}</td>
-          <td>{{ review['score'] }}</td>
-          <td>{{ review['content'] }}</td>
-          <td>{{ review['category'] }}</td>
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-
+    {% if data_available %}
     <script>
       // Warna untuk kategori
       const colors = {
-        baik: 'rgba(75, 192, 192, 0.7)',
-        netral: 'rgba(255, 206, 86, 0.7)',
-        buruk: 'rgba(255, 99, 132, 0.7)'
+        'Baik': 'rgba(75, 192, 192, 0.7)',
+        'Netral': 'rgba(255, 206, 86, 0.7)',
+        'Buruk': 'rgba(255, 99, 132, 0.7)',
+        'Tidak tersedia': 'rgba(201, 203, 207, 0.7)',
+        'Error': 'rgba(153, 102, 255, 0.7)'
       };
 
       // Konfigurasi umum untuk semua grafik
@@ -174,43 +196,67 @@
         }
       };
 
-      // Grafik Pie Flip
-      new Chart(document.getElementById('flipPieChart').getContext('2d'), {
-        type: 'pie',
-        data: {
-          labels: {{ labels|tojson }},
-          datasets: [{
-            data: {{ flip_values|tojson }},
-            backgroundColor: Object.values(colors),
-            borderWidth: 1
-          }]
-        },
-        options: commonOptions
-      });
+      // Siapkan data untuk chart
+      const labels = {{ labels|tojson|safe }};
+      const flipValues = {{ flip_values|tojson|safe }};
 
-      // Grafik Batang Flip
-      new Chart(document.getElementById('flipBarChart').getContext('2d'), {
-        type: 'bar',
-        data: {
-          labels: {{ labels|tojson }},
-          datasets: [{
-            label: 'Flip',
-            data: {{ flip_values|tojson }},
-            backgroundColor: Object.values(colors),
-            borderWidth: 1
-          }]
-        },
-        options: {
-          ...commonOptions,
-          plugins: { legend: { display: false } },
-          scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } }
-        }
-      });
+      // Beri warna sesuai label
+      const backgroundColors = labels.map(label => colors[label] || '#cccccc');
+
+      // Grafik Pie Flip
+      if (labels.length > 0 && flipValues.length > 0) {
+        new Chart(document.getElementById('flipPieChart').getContext('2d'), {
+          type: 'pie',
+          data: {
+            labels: labels,
+            datasets: [{
+              data: flipValues,
+              backgroundColor: backgroundColors,
+              borderWidth: 1
+            }]
+          },
+          options: commonOptions
+        });
+
+        // Grafik Batang Flip
+        new Chart(document.getElementById('flipBarChart').getContext('2d'), {
+          type: 'bar',
+          data: {
+            labels: labels,
+            datasets: [{
+              label: 'Jumlah Ulasan',
+              data: flipValues,
+              backgroundColor: backgroundColors,
+              borderWidth: 1
+            }]
+          },
+          options: {
+            ...commonOptions,
+            plugins: { legend: { display: false } },
+            scales: { 
+              y: { 
+                beginAtZero: true, 
+                ticks: { 
+                  precision: 0,
+                  stepSize: 1 
+                } 
+              } 
+            }
+          }
+        });
+      } else {
+        document.getElementById('flipPieChart').parentElement.innerHTML = 
+          '<p class="no-data">Tidak ada data untuk ditampilkan</p>';
+        document.getElementById('flipBarChart').parentElement.innerHTML = 
+          '<p class="no-data">Tidak ada data untuk ditampilkan</p>';
+      }
+
       // Fungsi untuk menyesuaikan ukuran grafik saat resize window
       window.addEventListener('resize', function() {
         Chart.getChart('flipPieChart')?.resize();
         Chart.getChart('flipBarChart')?.resize();
       });
     </script>
+    {% endif %}
   </body>
 </html>

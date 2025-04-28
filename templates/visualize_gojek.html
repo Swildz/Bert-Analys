@@ -144,7 +144,7 @@
           <td>{{ review['userName'] }}</td>
           <td>{{ review['score'] }}</td>
           <td>{{ review['content'] }}</td>
-          <td>{{ review['category'] }}</td>
+          <td>Manual: {{ review['category_manual'] }}<br>BERT: {{  review['category_bert'] }}</td>
         </tr>
         {% endfor %}
       </tbody>
