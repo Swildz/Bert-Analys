@@ -87,6 +87,24 @@
         "documentation": {}
     },
     {
+        "label": "visualizego",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def visualizego():\n    if df is not None and gojek_df is not None and tokopedia_df is not None:\n        if 'category' not in df.columns:\n            return \"Kolom 'category' tidak ditemukan di data.\"\n        # Hitung jumlah setiap kategori untuk semua dataset\n        flip_counts = df['category'].value_counts().to_dict()\n        gojek_counts = gojek_df['category'].value_counts().to_dict()\n        tokopedia_counts = tokopedia_df['category'].value_counts().to_dict()\n        # Gabungkan label dari semua dataset (asumsi kategori sama)\n        labels = list(flip_counts.keys())",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "visualizeto",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def visualizeto():\n    if df is not None and gojek_df is not None and tokopedia_df is not None:\n        if 'category' not in df.columns:\n            return \"Kolom 'category' tidak ditemukan di data.\"\n        # Hitung jumlah setiap kategori untuk semua dataset\n        flip_counts = df['category'].value_counts().to_dict()\n        gojek_counts = gojek_df['category'].value_counts().to_dict()\n        tokopedia_counts = tokopedia_df['category'].value_counts().to_dict()\n        # Gabungkan label dari semua dataset (asumsi kategori sama)\n        labels = list(flip_counts.keys())",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
         "label": "app",
         "kind": 5,
         "importPath": "app",
