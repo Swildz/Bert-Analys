@@ -174,20 +174,6 @@
         }
       };
 
-      // Grafik Pie Flip
-      new Chart(document.getElementById('flipPieChart').getContext('2d'), {
-        type: 'pie',
-        data: {
-          labels: {{ labels|tojson }},
-          datasets: [{
-            data: {{ flip_values|tojson }},
-            backgroundColor: Object.values(colors),
-            borderWidth: 1
-          }]
-        },
-        options: commonOptions
-      });
-
       // Grafik Pie Tokopedia
       new Chart(document.getElementById('tokopediaPieChart').getContext('2d'), {
         type: 'pie',
@@ -200,25 +186,6 @@
           }]
         },
         options: commonOptions
-      });
-
-      // Grafik Batang Gojek
-      new Chart(document.getElementById('gojekBarChart').getContext('2d'), {
-        type: 'bar',
-        data: {
-          labels: {{ labels|tojson }},
-          datasets: [{
-            label: 'Gojek',
-            data: {{ gojek_values|tojson }},
-            backgroundColor: Object.values(colors),
-            borderWidth: 1
-          }]
-        },
-        options: {
-          ...commonOptions,
-          plugins: { legend: { display: false } },
-          scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } }
-        }
       });
 
       // Grafik Batang Tokopedia
