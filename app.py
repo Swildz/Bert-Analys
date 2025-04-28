@@ -104,17 +104,137 @@ def visualize_data(dataframe, template_name):
 def index():
     return render_template('index.html')
 
+@app.route('/reviews')
+def reviews():
+    if df is None:
+        return render_template('error.html', message="Data Flip tidak tersedia.")
+    
+    search_query = request.args.get('search', '').lower()
+    filtered_df = df.copy() if df is not None else pd.DataFrame()
+
+    if search_query and not filtered_df.empty:
+        filtered_df = df[
+            df['userName'].astype(str).str.lower().str.contains(search_query) |
+            df['content'].astype(str).str.lower().str.contains(search_query) |
+            df['category'].astype(str).str.lower().str.contains(search_query) |
+            df['score'].astype(str).str.contains(search_query)
+        ]
+
+    reviews_data = []
+    if not filtered_df.empty:
+        for _, row in filtered_df.iterrows():
+            bert_category = predict_sentiment(row['content'])
+            reviews_data.append({
+                'userName': row.get('userName', 'Tidak tersedia'),
+                'score': row.get('score', 'Tidak tersedia'),
+                'content': row.get('content', 'Tidak tersedia'),
+                'category_manual': row.get('category', 'Tidak tersedia'),
+                'category_bert': bert_category
+            })
+
+    return render_template('reviews.html', 
+                          reviews=reviews_data, 
+                          search_query=search_query,
+                          data_available=df is not None)
+
 @app.route('/visualize')
 def visualize():
-    return visualize_data(df, 'visualize.html')
+    if df is None:
+        return render_template('error.html', message="Data Flip tidak tersedia.")
+    
+    if 'category' not in df.columns:
+        return render_template('error.html', message="Kolom 'category' tidak ditemukan di data Flip.")
+
+    flip_counts = df['category'].value_counts().to_dict()
+
+    labels = list(flip_counts.keys())
+    flip_values = list(flip_counts.values())
+
+    search_query = request.args.get('search', '').lower()
+    filtered_df = df.copy()
+
+    if search_query:
+        filtered_df = df[
+            df['userName'].astype(str).str.lower().str.contains(search_query) |
+            df['content'].astype(str).str.lower().str.contains(search_query) |
+            df['category'].astype(str).str.lower().str.contains(search_query) |
+            df['score'].astype(str).str.contains(search_query)
+        ]
+
+    reviews_data = filtered_df[['userName', 'score', 'content', 'category']].to_dict(orient='records')
+
+    return render_template('visualize.html',
+                         labels=labels,
+                         flip_values=flip_values,
+                         reviews=reviews_data,
+                         search_query=search_query,
+                         data_available=True)
 
 @app.route('/visualize_gojek')
 def visualize_gojek():
-    return visualize_data(gojek_df, 'visualize_gojek.html')
+    if gojek_df is None:
+        return render_template('error.html', message="Data Gojek tidak tersedia.")
+    
+    if 'category' not in gojek_df.columns:
+        return render_template('error.html', message="Kolom 'category' tidak ditemukan di data Gojek.")
+
+    gojek_counts = gojek_df['category'].value_counts().to_dict()
+
+    labels = list(gojek_counts.keys())
+    gojek_values = list(gojek_counts.values())
+
+    search_query = request.args.get('search', '').lower()
+    filtered_df = gojek_df.copy()
+
+    if search_query:
+        filtered_df = gojek_df[
+            gojek_df['userName'].astype(str).str.lower().str.contains(search_query) |
+            gojek_df['content'].astype(str).str.lower().str.contains(search_query) |
+            gojek_df['category'].astype(str).str.lower().str.contains(search_query) |
+            gojek_df['score'].astype(str).str.contains(search_query)
+        ]
+
+    reviews_data = filtered_df[['userName', 'score', 'content', 'category']].to_dict(orient='records')
+
+    return render_template('visualize_gojek.html',
+                         labels=labels,
+                         gojek_values=gojek_values,
+                         reviews=reviews_data,
+                         search_query=search_query,
+                         data_available=True)
 
 @app.route('/visualize_tokopedia')
 def visualize_tokopedia():
-    return visualize_data(tokopedia_df, 'visualize_tokopedia.html')
+    if tokopedia_df is None:
+        return render_template('error.html', message="Data Tokopedia tidak tersedia.")
+    
+    if 'category' not in tokopedia_df.columns:
+        return render_template('error.html', message="Kolom 'category' tidak ditemukan di data Tokopedia.")
+
+    tokopedia_counts = tokopedia_df['category'].value_counts().to_dict()
+
+    labels = list(tokopedia_counts.keys())
+    tokopedia_values = list(tokopedia_counts.values())
+
+    search_query = request.args.get('search', '').lower()
+    filtered_df = tokopedia_df.copy()
+
+    if search_query:
+        filtered_df = tokopedia_df[
+            tokopedia_df['userName'].astype(str).str.lower().str.contains(search_query) |
+            tokopedia_df['content'].astype(str).str.lower().str.contains(search_query) |
+            tokopedia_df['category'].astype(str).str.lower().str.contains(search_query) |
+            tokopedia_df['score'].astype(str).str.contains(search_query)
+        ]
+
+    reviews_data = filtered_df[['userName', 'score', 'content', 'category']].to_dict(orient='records')
+
+    return render_template('visualize_tokopedia.html',
+                         labels=labels,
+                         tokopedia_values=tokopedia_values,
+                         reviews=reviews_data,
+                         search_query=search_query,
+                         data_available=True)
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -42,6 +42,40 @@
         "documentation": {}
     },
     {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "AutoTokenizer",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AutoModelForSequenceClassification",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "torch.nn.functional",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn.functional",
+        "description": "torch.nn.functional",
+        "detail": "torch.nn.functional",
+        "documentation": {}
+    },
+    {
         "label": "load_csv",
         "kind": 2,
         "importPath": "utils.helper",
@@ -60,11 +94,38 @@
         "documentation": {}
     },
     {
+        "label": "predict_sentiment",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def predict_sentiment(text):\n    if not text or pd.isna(text):  # Handle empty or NaN text\n        return 'Tidak tersedia'\n    try:\n        inputs = tokenizer(text, return_tensors=\"pt\", truncation=True, padding=True)\n        with torch.no_grad():\n            outputs = model(**inputs)\n            probs = F.softmax(outputs.logits, dim=-1)\n            pred_class = torch.argmax(probs, dim=1).item()\n            if pred_class <= 1:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "load_data",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def load_data(file_path):\n    try:\n        df = pd.read_csv(file_path)\n        if df.empty:\n            print(f\"File {file_path} kosong\")\n            return None\n        # Pastikan kolom yang diperlukan ada\n        required_columns = ['userName', 'score', 'content']\n        for col in required_columns:\n            if col not in df.columns:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "add_category_column",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def add_category_column(dataframe):\n    if dataframe is not None:\n        def classify_sentiment(score):\n            if pd.isna(score):\n                return 'Tidak tersedia'\n            try:\n                score = float(score)\n                if score >= 4:\n                    return 'Baik'\n                elif score == 3:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
         "label": "index",
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def index():\n    return render_template('index.html')\n@app.route('/reviews')\ndef reviews():\n    if df is not None:\n        search_query = request.args.get('search', '').lower()\n        filtered_df = df\n        if search_query:\n            filtered_df = df[\n                df['userName'].str.lower().str.contains(search_query) |",
+        "peekOfCode": "def index():\n    return render_template('index.html')\n@app.route('/reviews')\ndef reviews():\n    if df is None:\n        return render_template('error.html', message=\"Data Flip tidak tersedia.\")\n    search_query = request.args.get('search', '').lower()\n    filtered_df = df.copy() if df is not None else pd.DataFrame()\n    if search_query and not filtered_df.empty:\n        filtered_df = df[",
         "detail": "app",
         "documentation": {}
     },
@@ -73,7 +134,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def reviews():\n    if df is not None:\n        search_query = request.args.get('search', '').lower()\n        filtered_df = df\n        if search_query:\n            filtered_df = df[\n                df['userName'].str.lower().str.contains(search_query) |\n                df['content'].str.lower().str.contains(search_query) |\n                df['category'].str.lower().str.contains(search_query) |\n                df['score'].astype(str).str.contains(search_query)",
+        "peekOfCode": "def reviews():\n    if df is None:\n        return render_template('error.html', message=\"Data Flip tidak tersedia.\")\n    search_query = request.args.get('search', '').lower()\n    filtered_df = df.copy() if df is not None else pd.DataFrame()\n    if search_query and not filtered_df.empty:\n        filtered_df = df[\n            df['userName'].astype(str).str.lower().str.contains(search_query) |\n            df['content'].astype(str).str.lower().str.contains(search_query) |\n            df['category'].astype(str).str.lower().str.contains(search_query) |",
         "detail": "app",
         "documentation": {}
     },
@@ -82,7 +143,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def visualize():\n    if df is not None:\n        if 'category' not in df.columns:\n            return \"Kolom 'category' tidak ditemukan di data.\"\n        flip_counts = df['category'].value_counts().to_dict()\n        labels = list(flip_counts.keys())\n        flip_values = list(flip_counts.values())\n        search_query = request.args.get('search', '').lower()\n        filtered_df = df\n        if search_query:",
+        "peekOfCode": "def visualize():\n    if df is None:\n        return render_template('error.html', message=\"Data Flip tidak tersedia.\")\n    if 'category' not in df.columns:\n        return render_template('error.html', message=\"Kolom 'category' tidak ditemukan di data Flip.\")\n    flip_counts = df['category'].value_counts().to_dict()\n    labels = list(flip_counts.keys())\n    flip_values = list(flip_counts.values())\n    search_query = request.args.get('search', '').lower()\n    filtered_df = df.copy()",
         "detail": "app",
         "documentation": {}
     },
@@ -91,7 +152,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def visualize_gojek():\n    if gojek_df is not None:\n        if 'category' not in gojek_df.columns:\n            return \"Kolom 'category' tidak ditemukan di data.\"\n        gojek_counts = gojek_df['category'].value_counts().to_dict()\n        labels = list(gojek_counts.keys())\n        gojek_values = list(gojek_counts.values())\n        search_query = request.args.get('search', '').lower()\n        filtered_df = gojek_df\n        if search_query:",
+        "peekOfCode": "def visualize_gojek():\n    if gojek_df is None:\n        return render_template('error.html', message=\"Data Gojek tidak tersedia.\")\n    if 'category' not in gojek_df.columns:\n        return render_template('error.html', message=\"Kolom 'category' tidak ditemukan di data Gojek.\")\n    gojek_counts = gojek_df['category'].value_counts().to_dict()\n    labels = list(gojek_counts.keys())\n    gojek_values = list(gojek_counts.values())\n    search_query = request.args.get('search', '').lower()\n    filtered_df = gojek_df.copy()",
         "detail": "app",
         "documentation": {}
     },
@@ -100,7 +161,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def visualize_tokopedia():\n    if tokopedia_df is not None:\n        if 'category' not in tokopedia_df.columns:\n            return \"Kolom 'category' tidak ditemukan di data.\"\n        tokopedia_counts = tokopedia_df['category'].value_counts().to_dict()\n        labels = list(tokopedia_counts.keys())\n        tokopedia_values = list(tokopedia_counts.values())\n        search_query = request.args.get('search', '').lower()\n        filtered_df = tokopedia_df\n        if search_query:",
+        "peekOfCode": "def visualize_tokopedia():\n    if tokopedia_df is None:\n        return render_template('error.html', message=\"Data Tokopedia tidak tersedia.\")\n    if 'category' not in tokopedia_df.columns:\n        return render_template('error.html', message=\"Kolom 'category' tidak ditemukan di data Tokopedia.\")\n    tokopedia_counts = tokopedia_df['category'].value_counts().to_dict()\n    labels = list(tokopedia_counts.keys())\n    tokopedia_values = list(tokopedia_counts.values())\n    search_query = request.args.get('search', '').lower()\n    filtered_df = tokopedia_df.copy()",
         "detail": "app",
         "documentation": {}
     },
@@ -109,7 +170,88 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "app = Flask(__name__)\n# Load data CSV saat server start\ntry:\n    # Load data utama\n    df = pd.read_csv('data/reviews_flip_2025.csv')\n    # Tambahkan kolom category berdasarkan score\n    def classify_sentiment(score):\n        if score >= 4:\n            return 'Baik'\n        elif score == 3:",
+        "peekOfCode": "app = Flask(__name__)\n# Load BERT model\nmodel_name = \"nlptown/bert-base-multilingual-uncased-sentiment\"\ntokenizer = AutoTokenizer.from_pretrained(model_name)\nmodel = AutoModelForSequenceClassification.from_pretrained(model_name)\n# Fungsi prediksi sentimen pakai BERT\ndef predict_sentiment(text):\n    if not text or pd.isna(text):  # Handle empty or NaN text\n        return 'Tidak tersedia'\n    try:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "model_name",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "model_name = \"nlptown/bert-base-multilingual-uncased-sentiment\"\ntokenizer = AutoTokenizer.from_pretrained(model_name)\nmodel = AutoModelForSequenceClassification.from_pretrained(model_name)\n# Fungsi prediksi sentimen pakai BERT\ndef predict_sentiment(text):\n    if not text or pd.isna(text):  # Handle empty or NaN text\n        return 'Tidak tersedia'\n    try:\n        inputs = tokenizer(text, return_tensors=\"pt\", truncation=True, padding=True)\n        with torch.no_grad():",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "tokenizer",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "tokenizer = AutoTokenizer.from_pretrained(model_name)\nmodel = AutoModelForSequenceClassification.from_pretrained(model_name)\n# Fungsi prediksi sentimen pakai BERT\ndef predict_sentiment(text):\n    if not text or pd.isna(text):  # Handle empty or NaN text\n        return 'Tidak tersedia'\n    try:\n        inputs = tokenizer(text, return_tensors=\"pt\", truncation=True, padding=True)\n        with torch.no_grad():\n            outputs = model(**inputs)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "model = AutoModelForSequenceClassification.from_pretrained(model_name)\n# Fungsi prediksi sentimen pakai BERT\ndef predict_sentiment(text):\n    if not text or pd.isna(text):  # Handle empty or NaN text\n        return 'Tidak tersedia'\n    try:\n        inputs = tokenizer(text, return_tensors=\"pt\", truncation=True, padding=True)\n        with torch.no_grad():\n            outputs = model(**inputs)\n            probs = F.softmax(outputs.logits, dim=-1)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "df = load_data('data/reviews_flip_2025.csv')\ngojek_df = load_data('data/reviews_gojek_2025.csv')\ntokopedia_df = load_data('data/reviews_tokopedia_2025.csv')\n# Tambahkan kolom category jika data tersedia\ndef add_category_column(dataframe):\n    if dataframe is not None:\n        def classify_sentiment(score):\n            if pd.isna(score):\n                return 'Tidak tersedia'\n            try:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "gojek_df",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "gojek_df = load_data('data/reviews_gojek_2025.csv')\ntokopedia_df = load_data('data/reviews_tokopedia_2025.csv')\n# Tambahkan kolom category jika data tersedia\ndef add_category_column(dataframe):\n    if dataframe is not None:\n        def classify_sentiment(score):\n            if pd.isna(score):\n                return 'Tidak tersedia'\n            try:\n                score = float(score)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "tokopedia_df",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "tokopedia_df = load_data('data/reviews_tokopedia_2025.csv')\n# Tambahkan kolom category jika data tersedia\ndef add_category_column(dataframe):\n    if dataframe is not None:\n        def classify_sentiment(score):\n            if pd.isna(score):\n                return 'Tidak tersedia'\n            try:\n                score = float(score)\n                if score >= 4:",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "df = add_category_column(df)\ngojek_df = add_category_column(gojek_df)\ntokopedia_df = add_category_column(tokopedia_df)\n@app.route('/')\ndef index():\n    return render_template('index.html')\n@app.route('/reviews')\ndef reviews():\n    if df is None:\n        return render_template('error.html', message=\"Data Flip tidak tersedia.\")",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "gojek_df",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "gojek_df = add_category_column(gojek_df)\ntokopedia_df = add_category_column(tokopedia_df)\n@app.route('/')\ndef index():\n    return render_template('index.html')\n@app.route('/reviews')\ndef reviews():\n    if df is None:\n        return render_template('error.html', message=\"Data Flip tidak tersedia.\")\n    search_query = request.args.get('search', '').lower()",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "tokopedia_df",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "tokopedia_df = add_category_column(tokopedia_df)\n@app.route('/')\ndef index():\n    return render_template('index.html')\n@app.route('/reviews')\ndef reviews():\n    if df is None:\n        return render_template('error.html', message=\"Data Flip tidak tersedia.\")\n    search_query = request.args.get('search', '').lower()\n    filtered_df = df.copy() if df is not None else pd.DataFrame()",
         "detail": "app",
         "documentation": {}
     }
