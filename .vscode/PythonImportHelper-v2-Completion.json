@@ -82,25 +82,25 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def visualize():\n    if df is not None and gojek_df is not None and tokopedia_df is not None:\n        if 'category' not in df.columns:\n            return \"Kolom 'category' tidak ditemukan di data.\"\n        # Hitung jumlah setiap kategori untuk semua dataset\n        flip_counts = df['category'].value_counts().to_dict()\n        gojek_counts = gojek_df['category'].value_counts().to_dict()\n        tokopedia_counts = tokopedia_df['category'].value_counts().to_dict()\n        # Gabungkan label dari semua dataset (asumsi kategori sama)\n        labels = list(flip_counts.keys())",
+        "peekOfCode": "def visualize():\n    if df is not None:\n        if 'category' not in df.columns:\n            return \"Kolom 'category' tidak ditemukan di data.\"\n        flip_counts = df['category'].value_counts().to_dict()\n        labels = list(flip_counts.keys())\n        flip_values = list(flip_counts.values())\n        search_query = request.args.get('search', '').lower()\n        filtered_df = df\n        if search_query:",
         "detail": "app",
         "documentation": {}
     },
     {
-        "label": "visualizego",
+        "label": "visualize_gojek",
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def visualizego():\n    if df is not None and gojek_df is not None and tokopedia_df is not None:\n        if 'category' not in df.columns:\n            return \"Kolom 'category' tidak ditemukan di data.\"\n        # Hitung jumlah setiap kategori untuk semua dataset\n        flip_counts = df['category'].value_counts().to_dict()\n        gojek_counts = gojek_df['category'].value_counts().to_dict()\n        tokopedia_counts = tokopedia_df['category'].value_counts().to_dict()\n        # Gabungkan label dari semua dataset (asumsi kategori sama)\n        labels = list(flip_counts.keys())",
+        "peekOfCode": "def visualize_gojek():\n    if gojek_df is not None:\n        if 'category' not in gojek_df.columns:\n            return \"Kolom 'category' tidak ditemukan di data.\"\n        gojek_counts = gojek_df['category'].value_counts().to_dict()\n        labels = list(gojek_counts.keys())\n        gojek_values = list(gojek_counts.values())\n        search_query = request.args.get('search', '').lower()\n        filtered_df = gojek_df\n        if search_query:",
         "detail": "app",
         "documentation": {}
     },
     {
-        "label": "visualizeto",
+        "label": "visualize_tokopedia",
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def visualizeto():\n    if df is not None and gojek_df is not None and tokopedia_df is not None:\n        if 'category' not in df.columns:\n            return \"Kolom 'category' tidak ditemukan di data.\"\n        # Hitung jumlah setiap kategori untuk semua dataset\n        flip_counts = df['category'].value_counts().to_dict()\n        gojek_counts = gojek_df['category'].value_counts().to_dict()\n        tokopedia_counts = tokopedia_df['category'].value_counts().to_dict()\n        # Gabungkan label dari semua dataset (asumsi kategori sama)\n        labels = list(flip_counts.keys())",
+        "peekOfCode": "def visualize_tokopedia():\n    if tokopedia_df is not None:\n        if 'category' not in tokopedia_df.columns:\n            return \"Kolom 'category' tidak ditemukan di data.\"\n        tokopedia_counts = tokopedia_df['category'].value_counts().to_dict()\n        labels = list(tokopedia_counts.keys())\n        tokopedia_values = list(tokopedia_counts.values())\n        search_query = request.args.get('search', '').lower()\n        filtered_df = tokopedia_df\n        if search_query:",
         "detail": "app",
         "documentation": {}
     },
@@ -109,7 +109,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "app = Flask(__name__)\n# Load data CSV saat server start\ntry:\n    # Load data utama\n    df = pd.read_csv('data/reviews_flip_2025.csv')  # Ganti nama file sesuai kebutuhan\n    # Tambahkan kolom category berdasarkan score\n    def classify_sentiment(score):\n        if score >= 4:\n            return 'Baik'\n        elif score == 3:",
+        "peekOfCode": "app = Flask(__name__)\n# Load data CSV saat server start\ntry:\n    # Load data utama\n    df = pd.read_csv('data/reviews_flip_2025.csv')\n    # Tambahkan kolom category berdasarkan score\n    def classify_sentiment(score):\n        if score >= 4:\n            return 'Baik'\n        elif score == 3:",
         "detail": "app",
         "documentation": {}
     }
