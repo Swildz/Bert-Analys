@@ -97,23 +97,6 @@
     <h1>Visualisasi Sentimen Review</h1>
 
     <a href="/" class="back-link">← Kembali ke Halaman Utama</a>
-    
-    <div class="chart-container">
-      <!-- Grafik Pie untuk Flip -->
-      <div class="chart-wrapper">
-        <h2>Flip - Grafik Pie</h2>
-        <div class="chart-box">
-          <canvas id="flipPieChart"></canvas>
-        </div>
-      </div>
-
-      <!-- Grafik Pie untuk Gojek -->
-      <div class="chart-wrapper">
-        <h2>Gojek - Grafik Pie</h2>
-        <div class="chart-box">
-          <canvas id="gojekPieChart"></canvas>
-        </div>
-      </div>
 
       <!-- Grafik Pie untuk Tokopedia -->
       <div class="chart-wrapper">
@@ -125,21 +108,6 @@
     </div>
 
     <div class="chart-container">
-      <!-- Grafik Batang untuk Flip -->
-      <div class="chart-wrapper">
-        <h2>Flip - Grafik Batang</h2>
-        <div class="chart-box">
-          <canvas id="flipBarChart"></canvas>
-        </div>
-      </div>
-
-      <!-- Grafik Batang untuk Gojek -->
-      <div class="chart-wrapper">
-        <h2>Gojek - Grafik Batang</h2>
-        <div class="chart-box">
-          <canvas id="gojekBarChart"></canvas>
-        </div>
-      </div>
 
       <!-- Grafik Batang untuk Tokopedia -->
       <div class="chart-wrapper">
@@ -220,20 +188,6 @@
         options: commonOptions
       });
 
-      // Grafik Pie Gojek
-      new Chart(document.getElementById('gojekPieChart').getContext('2d'), {
-        type: 'pie',
-        data: {
-          labels: {{ labels|tojson }},
-          datasets: [{
-            data: {{ gojek_values|tojson }},
-            backgroundColor: Object.values(colors),
-            borderWidth: 1
-          }]
-        },
-        options: commonOptions
-      });
-
       // Grafik Pie Tokopedia
       new Chart(document.getElementById('tokopediaPieChart').getContext('2d'), {
         type: 'pie',
@@ -246,25 +200,6 @@
           }]
         },
         options: commonOptions
-      });
-
-      // Grafik Batang Flip
-      new Chart(document.getElementById('flipBarChart').getContext('2d'), {
-        type: 'bar',
-        data: {
-          labels: {{ labels|tojson }},
-          datasets: [{
-            label: 'Flip',
-            data: {{ flip_values|tojson }},
-            backgroundColor: Object.values(colors),
-            borderWidth: 1
-          }]
-        },
-        options: {
-          ...commonOptions,
-          plugins: { legend: { display: false } },
-          scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } }
-        }
       });
 
       // Grafik Batang Gojek
@@ -307,11 +242,7 @@
 
       // Fungsi untuk menyesuaikan ukuran grafik saat resize window
       window.addEventListener('resize', function() {
-        Chart.getChart('flipPieChart')?.resize();
-        Chart.getChart('gojekPieChart')?.resize();
         Chart.getChart('tokopediaPieChart')?.resize();
-        Chart.getChart('flipBarChart')?.resize();
-        Chart.getChart('gojekBarChart')?.resize();
         Chart.getChart('tokopediaBarChart')?.resize();
       });
     </script>

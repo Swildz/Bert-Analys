@@ -126,7 +126,7 @@ def visualizego():
 
         reviews_data = filtered_df[['userName', 'score', 'content', 'category']].to_dict(orient='records')
         
-        return render_template('visualize.html', 
+        return render_template('visualize_gojek.html', 
                              labels=labels, 
                              gojek_values=gojek_values,
                              reviews=reviews_data, 
@@ -165,7 +165,7 @@ def visualizeto():
 
         reviews_data = filtered_df[['userName', 'score', 'content', 'category']].to_dict(orient='records')
         
-        return render_template('visualize.html', 
+        return render_template('visualize_tokopedia.html', 
                              labels=labels, 
                              tokopedia_values=tokopedia_values,
                              reviews=reviews_data,
