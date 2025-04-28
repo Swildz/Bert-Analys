@@ -1,15 +1,82 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Flip Sentiment Analysis</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
     <h1>Selamat Datang di Analisis Sentimen Flip!</h1>
-    <div class="menu">
-        <a href="/reviews">Lihat Data Ulasan</a>
-        <a href="/visualize">Lihat Visualisasi Sentimen</a>
+    <div style="display: flex; gap: 20px; justify-content: space-around; flex-wrap: nowrap; margin-top: 30px;">
+      <a href="/visualize">
+        <div
+          style="
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            background-color: white;
+          "
+        >
+          <img
+            src="https://tech.flip.id/content/images/2022/01/Logo-Flip-O.png"
+            alt="Flip Logo"
+            style="height: 200px; margin-bottom: 15px"
+          />
+          <h3>Analisis Sentimen Flip</h3>
+          <p>Klik untuk melihat hasil analisis sentimen pengguna Flip</p>
+        </div>
+      </a>
+
+      <a href="/visualize">
+        <div
+          style="
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            background-color: white;
+          "
+          onclick="showGojekAnalysis()"
+        >
+          <img
+            src="https://1000logos.net/wp-content/uploads/2020/11/Gojek-Logo.png"
+            alt="Gojek Logo"
+            style="height: 200px; margin-bottom: 15px"
+          />
+          <h3>Analisis Sentimen Gojek</h3>
+          <p>Klik untuk melihat hasil analisis sentimen pengguna Gojek</p>
+        </div>
+      </a>
+
+      <a href="/visualize">
+        <div
+          style="
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            background-color: white;
+          "
+        >
+          <img
+            src="https://th.bing.com/th/id/OIP.i0f2d72a2jiUAK3mbyXn0AHaHa?cb=iwp1&rs=1&pid=ImgDetMain"
+            alt="Tokopedia Logo"
+            style="height: 200px; margin-bottom: 15px"
+          />
+          <h3>Analisis Sentimen Tokopedia</h3>
+          <p>Klik untuk melihat hasil analisis sentimen pengguna Tokopedia</p>
+        </div>
+      </a>
     </div>
-</body>
+  </body>
 </html>
