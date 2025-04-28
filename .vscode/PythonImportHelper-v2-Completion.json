@@ -34,6 +34,14 @@
         "documentation": {}
     },
     {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
         "label": "load_csv",
         "kind": 2,
         "importPath": "utils.helper",
@@ -52,20 +60,29 @@
         "documentation": {}
     },
     {
-        "label": "home",
+        "label": "index",
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def home():\n    return render_template('index.html', title='Halaman Utama')\n@app.route('/about')\ndef about():\n    return '<h1>Tentang Kami</h1><p>Ini adalah halaman tentang kami.</p>'\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "peekOfCode": "def index():\n    return render_template('index.html')\n@app.route('/reviews')\ndef reviews():\n    if df is not None:\n        search_query = request.args.get('search', '').lower()\n        filtered_df = df\n        if search_query:\n            filtered_df = df[\n                df['userName'].str.lower().str.contains(search_query) |",
         "detail": "app",
         "documentation": {}
     },
     {
-        "label": "about",
+        "label": "reviews",
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def about():\n    return '<h1>Tentang Kami</h1><p>Ini adalah halaman tentang kami.</p>'\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "peekOfCode": "def reviews():\n    if df is not None:\n        search_query = request.args.get('search', '').lower()\n        filtered_df = df\n        if search_query:\n            filtered_df = df[\n                df['userName'].str.lower().str.contains(search_query) |\n                df['content'].str.lower().str.contains(search_query) |\n                df['category'].str.lower().str.contains(search_query) |\n                df['score'].astype(str).str.contains(search_query)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "visualize",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def visualize():\n    if df is not None and gojek_df is not None and tokopedia_df is not None:\n        if 'category' not in df.columns:\n            return \"Kolom 'category' tidak ditemukan di data.\"\n        # Hitung jumlah setiap kategori untuk semua dataset\n        flip_counts = df['category'].value_counts().to_dict()\n        gojek_counts = gojek_df['category'].value_counts().to_dict()\n        tokopedia_counts = tokopedia_df['category'].value_counts().to_dict()\n        # Gabungkan label dari semua dataset (asumsi kategori sama)\n        labels = list(flip_counts.keys())",
         "detail": "app",
         "documentation": {}
     },
@@ -74,7 +91,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "app = Flask(__name__)\n@app.route('/')\ndef home():\n    return render_template('index.html', title='Halaman Utama')\n@app.route('/about')\ndef about():\n    return '<h1>Tentang Kami</h1><p>Ini adalah halaman tentang kami.</p>'\nif __name__ == '__main__':\n    app.run(debug=True)",
+        "peekOfCode": "app = Flask(__name__)\n# Load data CSV saat server start\ntry:\n    # Load data utama\n    df = pd.read_csv('data/reviews_flip_2025.csv')  # Ganti nama file sesuai kebutuhan\n    # Tambahkan kolom category berdasarkan score\n    def classify_sentiment(score):\n        if score >= 4:\n            return 'Baik'\n        elif score == 3:",
         "detail": "app",
         "documentation": {}
     }
