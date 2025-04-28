@@ -1,11 +1,36 @@
 [
     {
-        "label": "pandas",
+        "label": "argparse",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "pandas",
-        "description": "pandas",
-        "detail": "pandas",
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "ArgumentParser",
+        "importPath": "argparse",
+        "description": "argparse",
+        "isExtraImport": true,
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "ArgumentParser",
+        "importPath": "argparse",
+        "description": "argparse",
+        "isExtraImport": true,
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "glob",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "glob",
+        "description": "glob",
+        "detail": "glob",
         "documentation": {}
     },
     {
@@ -15,6 +40,1311 @@
         "importPath": "os",
         "description": "os",
         "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "sysconfig",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sysconfig",
+        "description": "sysconfig",
+        "detail": "sysconfig",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "winreg",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "winreg",
+        "description": "winreg",
+        "detail": "winreg",
+        "documentation": {}
+    },
+    {
+        "label": "site",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "site",
+        "description": "site",
+        "detail": "site",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "math",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "math",
+        "description": "math",
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "torch",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch",
+        "description": "torch",
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "nn",
+        "importPath": "torch",
+        "description": "torch",
+        "isExtraImport": true,
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "nn",
+        "importPath": "torch",
+        "description": "torch",
+        "isExtraImport": true,
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "optim",
+        "importPath": "torch",
+        "description": "torch",
+        "isExtraImport": true,
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "optim",
+        "importPath": "torch",
+        "description": "torch",
+        "isExtraImport": true,
+        "detail": "torch",
+        "documentation": {}
+    },
+    {
+        "label": "CrossEntropyLoss",
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "isExtraImport": true,
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "MSELoss",
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "isExtraImport": true,
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "CrossEntropyLoss",
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "isExtraImport": true,
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "MSELoss",
+        "importPath": "torch.nn",
+        "description": "torch.nn",
+        "isExtraImport": true,
+        "detail": "torch.nn",
+        "documentation": {}
+    },
+    {
+        "label": "gelu",
+        "importPath": "transformers.activations",
+        "description": "transformers.activations",
+        "isExtraImport": true,
+        "detail": "transformers.activations",
+        "documentation": {}
+    },
+    {
+        "label": "gelu_new",
+        "importPath": "transformers.activations",
+        "description": "transformers.activations",
+        "isExtraImport": true,
+        "detail": "transformers.activations",
+        "documentation": {}
+    },
+    {
+        "label": "gelu",
+        "importPath": "transformers.activations",
+        "description": "transformers.activations",
+        "isExtraImport": true,
+        "detail": "transformers.activations",
+        "documentation": {}
+    },
+    {
+        "label": "gelu_new",
+        "importPath": "transformers.activations",
+        "description": "transformers.activations",
+        "isExtraImport": true,
+        "detail": "transformers.activations",
+        "documentation": {}
+    },
+    {
+        "label": "swish",
+        "importPath": "transformers.activations",
+        "description": "transformers.activations",
+        "isExtraImport": true,
+        "detail": "transformers.activations",
+        "documentation": {}
+    },
+    {
+        "label": "BertConfig",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AlbertPreTrainedModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "BertPreTrainedModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AlbertModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "BertModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "BertConfig",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "XLMModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "XLMConfig",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "XLMRobertaModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "XLMRobertaConfig",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AutoTokenizer",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AutoConfig",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AlbertPreTrainedModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "BertPreTrainedModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AlbertModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "BertModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "BertConfig",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "XLMModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "XLMConfig",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "XLMRobertaModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "XLMRobertaConfig",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AutoTokenizer",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AutoConfig",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AutoTokenizer",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AlbertConfig",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AlbertTokenizer",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AlbertForSequenceClassification",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AlbertModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "BertConfig",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "BertTokenizer",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "BertForSequenceClassification",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "BertForPreTraining",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "BertModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "XLMConfig",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "XLMTokenizer",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "XLMForSequenceClassification",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "XLMForTokenClassification",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "XLMModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "XLMRobertaConfig",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "XLMRobertaTokenizer",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "XLMRobertaForSequenceClassification",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "XLMRobertaModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AdamW",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AdamW",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AutoTokenizer",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "AutoModelForSequenceClassification",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "BertForSequenceClassification",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "BertTokenizer",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "add_start_docstrings",
+        "importPath": "transformers.file_utils",
+        "description": "transformers.file_utils",
+        "isExtraImport": true,
+        "detail": "transformers.file_utils",
+        "documentation": {}
+    },
+    {
+        "label": "add_start_docstrings_to_model_forward",
+        "importPath": "transformers.file_utils",
+        "description": "transformers.file_utils",
+        "isExtraImport": true,
+        "detail": "transformers.file_utils",
+        "documentation": {}
+    },
+    {
+        "label": "add_start_docstrings",
+        "importPath": "transformers.file_utils",
+        "description": "transformers.file_utils",
+        "isExtraImport": true,
+        "detail": "transformers.file_utils",
+        "documentation": {}
+    },
+    {
+        "label": "add_start_docstrings_to_callable",
+        "importPath": "transformers.file_utils",
+        "description": "transformers.file_utils",
+        "isExtraImport": true,
+        "detail": "transformers.file_utils",
+        "documentation": {}
+    },
+    {
+        "label": "PreTrainedModel",
+        "importPath": "transformers.modeling_utils",
+        "description": "transformers.modeling_utils",
+        "isExtraImport": true,
+        "detail": "transformers.modeling_utils",
+        "documentation": {}
+    },
+    {
+        "label": "prune_linear_layer",
+        "importPath": "transformers.modeling_utils",
+        "description": "transformers.modeling_utils",
+        "isExtraImport": true,
+        "detail": "transformers.modeling_utils",
+        "documentation": {}
+    },
+    {
+        "label": "PreTrainedModel",
+        "importPath": "transformers.modeling_utils",
+        "description": "transformers.modeling_utils",
+        "isExtraImport": true,
+        "detail": "transformers.modeling_utils",
+        "documentation": {}
+    },
+    {
+        "label": "prune_linear_layer",
+        "importPath": "transformers.modeling_utils",
+        "description": "transformers.modeling_utils",
+        "isExtraImport": true,
+        "detail": "transformers.modeling_utils",
+        "documentation": {}
+    },
+    {
+        "label": "BertConfig",
+        "importPath": "transformers.configuration_bert",
+        "description": "transformers.configuration_bert",
+        "isExtraImport": true,
+        "detail": "transformers.configuration_bert",
+        "documentation": {}
+    },
+    {
+        "label": "XLMPreTrainedModel",
+        "importPath": "transformers.modeling_xlm",
+        "description": "transformers.modeling_xlm",
+        "isExtraImport": true,
+        "detail": "transformers.modeling_xlm",
+        "documentation": {}
+    },
+    {
+        "label": "AspectExtractionDataset",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "AspectExtractionDataLoader",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "NerGritDataset",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "NerProsaDataset",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "NerDataLoader",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "PosTagIdnDataset",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "PosTagProsaDataset",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "PosTagDataLoader",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "EmotionDetectionDataset",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "EmotionDetectionDataLoader",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "EntailmentDataset",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "EntailmentDataLoader",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "DocumentSentimentDataset",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "DocumentSentimentDataLoader",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "KeywordExtractionDataset",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "KeywordExtractionDataLoader",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "NewsCategorizationDataset",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "NewsCategorizationDataLoader",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "QAFactoidDataset",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "QAFactoidDataLoader",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "AspectBasedSentimentAnalysisAiryDataset",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "AspectBasedSentimentAnalysisProsaDataset",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "AspectBasedSentimentAnalysisDataLoader",
+        "importPath": "utils.data_utils",
+        "description": "utils.data_utils",
+        "isExtraImport": true,
+        "detail": "utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "WordSplitTokenizer",
+        "importPath": "utils.functions",
+        "description": "utils.functions",
+        "isExtraImport": true,
+        "detail": "utils.functions",
+        "documentation": {}
+    },
+    {
+        "label": "load_model",
+        "importPath": "utils.functions",
+        "description": "utils.functions",
+        "isExtraImport": true,
+        "detail": "utils.functions",
+        "documentation": {}
+    },
+    {
+        "label": "WordSplitTokenizer",
+        "importPath": "utils.functions",
+        "description": "utils.functions",
+        "isExtraImport": true,
+        "detail": "utils.functions",
+        "documentation": {}
+    },
+    {
+        "label": "load_eval_model",
+        "importPath": "utils.functions",
+        "description": "utils.functions",
+        "isExtraImport": true,
+        "detail": "utils.functions",
+        "documentation": {}
+    },
+    {
+        "label": "WordSplitTokenizer",
+        "importPath": "utils.functions",
+        "description": "utils.functions",
+        "isExtraImport": true,
+        "detail": "utils.functions",
+        "documentation": {}
+    },
+    {
+        "label": "emotion_detection_metrics_fn",
+        "importPath": "utils.metrics",
+        "description": "utils.metrics",
+        "isExtraImport": true,
+        "detail": "utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "aspect_extraction_metrics_fn",
+        "importPath": "utils.metrics",
+        "description": "utils.metrics",
+        "isExtraImport": true,
+        "detail": "utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "ner_metrics_fn",
+        "importPath": "utils.metrics",
+        "description": "utils.metrics",
+        "isExtraImport": true,
+        "detail": "utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "pos_tag_metrics_fn",
+        "importPath": "utils.metrics",
+        "description": "utils.metrics",
+        "isExtraImport": true,
+        "detail": "utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "entailment_metrics_fn",
+        "importPath": "utils.metrics",
+        "description": "utils.metrics",
+        "isExtraImport": true,
+        "detail": "utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "document_sentiment_metrics_fn",
+        "importPath": "utils.metrics",
+        "description": "utils.metrics",
+        "isExtraImport": true,
+        "detail": "utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "keyword_extraction_metrics_fn",
+        "importPath": "utils.metrics",
+        "description": "utils.metrics",
+        "isExtraImport": true,
+        "detail": "utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "news_categorization_metrics_fn",
+        "importPath": "utils.metrics",
+        "description": "utils.metrics",
+        "isExtraImport": true,
+        "detail": "utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "qa_factoid_metrics_fn",
+        "importPath": "utils.metrics",
+        "description": "utils.metrics",
+        "isExtraImport": true,
+        "detail": "utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "absa_metrics_fn",
+        "importPath": "utils.metrics",
+        "description": "utils.metrics",
+        "isExtraImport": true,
+        "detail": "utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "absa_metrics_fn",
+        "importPath": "utils.metrics",
+        "description": "utils.metrics",
+        "isExtraImport": true,
+        "detail": "utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "forward_sequence_classification",
+        "importPath": "utils.forward_fn",
+        "description": "utils.forward_fn",
+        "isExtraImport": true,
+        "detail": "utils.forward_fn",
+        "documentation": {}
+    },
+    {
+        "label": "forward_word_classification",
+        "importPath": "utils.forward_fn",
+        "description": "utils.forward_fn",
+        "isExtraImport": true,
+        "detail": "utils.forward_fn",
+        "documentation": {}
+    },
+    {
+        "label": "forward_sequence_multi_classification",
+        "importPath": "utils.forward_fn",
+        "description": "utils.forward_fn",
+        "isExtraImport": true,
+        "detail": "utils.forward_fn",
+        "documentation": {}
+    },
+    {
+        "label": "TweetTokenizer",
+        "importPath": "nltk.tokenize",
+        "description": "nltk.tokenize",
+        "isExtraImport": true,
+        "detail": "nltk.tokenize",
+        "documentation": {}
+    },
+    {
+        "label": "TweetTokenizer",
+        "importPath": "nltk.tokenize",
+        "description": "nltk.tokenize",
+        "isExtraImport": true,
+        "detail": "nltk.tokenize",
+        "documentation": {}
+    },
+    {
+        "label": "TweetTokenizer",
+        "importPath": "nltk.tokenize",
+        "description": "nltk.tokenize",
+        "isExtraImport": true,
+        "detail": "nltk.tokenize",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "defaultdict",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "namedtuple",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "string",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "string",
+        "description": "string",
+        "detail": "string",
+        "documentation": {}
+    },
+    {
+        "label": "Dataset",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "DataLoader",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "AlbertForWordClassification",
+        "importPath": "modules.word_classification",
+        "description": "modules.word_classification",
+        "isExtraImport": true,
+        "detail": "modules.word_classification",
+        "documentation": {}
+    },
+    {
+        "label": "BertForWordClassification",
+        "importPath": "modules.word_classification",
+        "description": "modules.word_classification",
+        "isExtraImport": true,
+        "detail": "modules.word_classification",
+        "documentation": {}
+    },
+    {
+        "label": "XLMForWordClassification",
+        "importPath": "modules.word_classification",
+        "description": "modules.word_classification",
+        "isExtraImport": true,
+        "detail": "modules.word_classification",
+        "documentation": {}
+    },
+    {
+        "label": "XLMRobertaForWordClassification",
+        "importPath": "modules.word_classification",
+        "description": "modules.word_classification",
+        "isExtraImport": true,
+        "detail": "modules.word_classification",
+        "documentation": {}
+    },
+    {
+        "label": "AlbertForMultiLabelClassification",
+        "importPath": "modules.multi_label_classification",
+        "description": "modules.multi_label_classification",
+        "isExtraImport": true,
+        "detail": "modules.multi_label_classification",
+        "documentation": {}
+    },
+    {
+        "label": "BertForMultiLabelClassification",
+        "importPath": "modules.multi_label_classification",
+        "description": "modules.multi_label_classification",
+        "isExtraImport": true,
+        "detail": "modules.multi_label_classification",
+        "documentation": {}
+    },
+    {
+        "label": "XLMForMultiLabelClassification",
+        "importPath": "modules.multi_label_classification",
+        "description": "modules.multi_label_classification",
+        "isExtraImport": true,
+        "detail": "modules.multi_label_classification",
+        "documentation": {}
+    },
+    {
+        "label": "XLMRobertaForMultiLabelClassification",
+        "importPath": "modules.multi_label_classification",
+        "description": "modules.multi_label_classification",
+        "isExtraImport": true,
+        "detail": "modules.multi_label_classification",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "itertools",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "itertools",
+        "description": "itertools",
+        "detail": "itertools",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "f1_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "recall_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "precision_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "deepcopy",
+        "importPath": "copy",
+        "description": "copy",
+        "isExtraImport": true,
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
+        "label": "deepcopy",
+        "importPath": "copy",
+        "description": "copy",
+        "isExtraImport": true,
+        "detail": "copy",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "StepLR",
+        "importPath": "torch.optim.lr_scheduler",
+        "description": "torch.optim.lr_scheduler",
+        "isExtraImport": true,
+        "detail": "torch.optim.lr_scheduler",
+        "documentation": {}
+    },
+    {
+        "label": "StepLR",
+        "importPath": "torch.optim.lr_scheduler",
+        "description": "torch.optim.lr_scheduler",
+        "isExtraImport": true,
+        "detail": "torch.optim.lr_scheduler",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "get_parser",
+        "importPath": "utils.args_helper",
+        "description": "utils.args_helper",
+        "isExtraImport": true,
+        "detail": "utils.args_helper",
+        "documentation": {}
+    },
+    {
+        "label": "print_opts",
+        "importPath": "utils.args_helper",
+        "description": "utils.args_helper",
+        "isExtraImport": true,
+        "detail": "utils.args_helper",
+        "documentation": {}
+    },
+    {
+        "label": "append_dataset_args",
+        "importPath": "utils.args_helper",
+        "description": "utils.args_helper",
+        "isExtraImport": true,
+        "detail": "utils.args_helper",
+        "documentation": {}
+    },
+    {
+        "label": "get_eval_parser",
+        "importPath": "utils.args_helper",
+        "description": "utils.args_helper",
+        "isExtraImport": true,
+        "detail": "utils.args_helper",
+        "documentation": {}
+    },
+    {
+        "label": "print_opts",
+        "importPath": "utils.args_helper",
+        "description": "utils.args_helper",
+        "isExtraImport": true,
+        "detail": "utils.args_helper",
+        "documentation": {}
+    },
+    {
+        "label": "append_dataset_args",
+        "importPath": "utils.args_helper",
+        "description": "utils.args_helper",
+        "isExtraImport": true,
+        "detail": "utils.args_helper",
         "documentation": {}
     },
     {
@@ -42,37 +1372,1002 @@
         "documentation": {}
     },
     {
-        "label": "torch",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "torch",
-        "description": "torch",
-        "detail": "torch",
-        "documentation": {}
-    },
-    {
-        "label": "AutoTokenizer",
-        "importPath": "transformers",
-        "description": "transformers",
-        "isExtraImport": true,
-        "detail": "transformers",
-        "documentation": {}
-    },
-    {
-        "label": "AutoModelForSequenceClassification",
-        "importPath": "transformers",
-        "description": "transformers",
-        "isExtraImport": true,
-        "detail": "transformers",
-        "documentation": {}
-    },
-    {
         "label": "torch.nn.functional",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "torch.nn.functional",
         "description": "torch.nn.functional",
         "detail": "torch.nn.functional",
+        "documentation": {}
+    },
+    {
+        "label": "Tee",
+        "kind": 6,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "class Tee:\n    def __init__(self, file):\n        self.f = file\n    def write(self, what):\n        if self.f is not None:\n            try:\n                self.f.write(what.replace(\"\\n\", \"\\r\\n\"))\n            except OSError:\n                pass\n        tee_f.write(what)",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_root_hkey",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_root_hkey():\n    try:\n        winreg.OpenKey(\n            winreg.HKEY_LOCAL_MACHINE, root_key_name, 0, winreg.KEY_CREATE_SUB_KEY\n        )\n        return winreg.HKEY_LOCAL_MACHINE\n    except OSError:\n        # Either not exist, or no permissions to create subkey means\n        # must be HKCU\n        return winreg.HKEY_CURRENT_USER",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "create_shortcut",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def create_shortcut(\n    path, description, filename, arguments=\"\", workdir=\"\", iconpath=\"\", iconindex=0\n):\n    import pythoncom\n    from win32com.shell import shell\n    ilink = pythoncom.CoCreateInstance(\n        shell.CLSID_ShellLink,\n        None,\n        pythoncom.CLSCTX_INPROC_SERVER,\n        shell.IID_IShellLink,",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_special_folder_path",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_special_folder_path(path_name):\n    from win32com.shell import shell, shellcon\n    for maybe in \"\"\"\n        CSIDL_COMMON_STARTMENU CSIDL_STARTMENU CSIDL_COMMON_APPDATA\n        CSIDL_LOCAL_APPDATA CSIDL_APPDATA CSIDL_COMMON_DESKTOPDIRECTORY\n        CSIDL_DESKTOPDIRECTORY CSIDL_COMMON_STARTUP CSIDL_STARTUP\n        CSIDL_COMMON_PROGRAMS CSIDL_PROGRAMS CSIDL_PROGRAM_FILES_COMMON\n        CSIDL_PROGRAM_FILES CSIDL_FONTS\"\"\".split():\n        if maybe == path_name:\n            csidl = getattr(shellcon, maybe)",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "CopyTo",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def CopyTo(desc, src, dest):\n    import win32api\n    import win32con\n    while 1:\n        try:\n            win32api.CopyFile(src, dest, 0)\n            return\n        except win32api.error as details:\n            if details.winerror == 5:  # access denied - user not admin.\n                raise",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "LoadSystemModule",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def LoadSystemModule(lib_dir, modname):\n    # See if this is a debug build.\n    import importlib.machinery\n    import importlib.util\n    suffix = \"_d\" if \"_d.pyd\" in importlib.machinery.EXTENSION_SUFFIXES else \"\"\n    filename = \"%s%d%d%s.dll\" % (\n        modname,\n        sys.version_info.major,\n        sys.version_info.minor,\n        suffix,",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "SetPyKeyVal",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def SetPyKeyVal(key_name, value_name, value):\n    root_hkey = get_root_hkey()\n    root_key = winreg.OpenKey(root_hkey, root_key_name)\n    try:\n        my_key = winreg.CreateKey(root_key, key_name)\n        try:\n            winreg.SetValueEx(my_key, value_name, 0, winreg.REG_SZ, value)\n            if verbose:\n                print(f\"-> {root_key_name}\\\\{key_name}[{value_name}]={value!r}\")\n        finally:",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "UnsetPyKeyVal",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def UnsetPyKeyVal(key_name, value_name, delete_key=False):\n    root_hkey = get_root_hkey()\n    root_key = winreg.OpenKey(root_hkey, root_key_name)\n    try:\n        my_key = winreg.OpenKey(root_key, key_name, 0, winreg.KEY_SET_VALUE)\n        try:\n            winreg.DeleteValue(my_key, value_name)\n            if verbose:\n                print(f\"-> DELETE {root_key_name}\\\\{key_name}[{value_name}]\")\n        finally:",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterCOMObjects",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def RegisterCOMObjects(register=True):\n    import win32com.server.register\n    if register:\n        func = win32com.server.register.RegisterClasses\n    else:\n        func = win32com.server.register.UnregisterClasses\n    flags = {}\n    if not verbose:\n        flags[\"quiet\"] = 1\n    for module, klass_name in com_modules:",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterHelpFile",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def RegisterHelpFile(register=True, lib_dir=None):\n    if lib_dir is None:\n        lib_dir = sysconfig.get_paths()[\"platlib\"]\n    if register:\n        # Register the .chm help file.\n        chm_file = os.path.join(lib_dir, \"PyWin32.chm\")\n        if os.path.isfile(chm_file):\n            # This isn't recursive, so if 'Help' doesn't exist, we croak\n            SetPyKeyVal(\"Help\", None, None)\n            SetPyKeyVal(\"Help\\\\Pythonwin Reference\", None, chm_file)",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "RegisterPythonwin",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def RegisterPythonwin(register=True, lib_dir=None):\n    \"\"\"Add (or remove) Pythonwin to context menu for python scripts.\n    ??? Should probably also add Edit command for pys files also.\n    Also need to remove these keys on uninstall, but there's no function\n    to add registry entries to uninstall log ???\n    \"\"\"\n    import os\n    if lib_dir is None:\n        lib_dir = sysconfig.get_paths()[\"platlib\"]\n    classes_root = get_root_hkey()",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_shortcuts_folder",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_shortcuts_folder():\n    if get_root_hkey() == winreg.HKEY_LOCAL_MACHINE:\n        try:\n            fldr = get_special_folder_path(\"CSIDL_COMMON_PROGRAMS\")\n        except OSError:\n            # No CSIDL_COMMON_PROGRAMS on this platform\n            fldr = get_special_folder_path(\"CSIDL_PROGRAMS\")\n    else:\n        # non-admin install - always goes in this user's start menu.\n        fldr = get_special_folder_path(\"CSIDL_PROGRAMS\")",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "get_system_dir",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def get_system_dir():\n    import win32api  # we assume this exists.\n    try:\n        import pythoncom\n        import win32process\n        from win32com.shell import shell, shellcon\n        try:\n            if win32process.IsWow64Process():\n                return shell.SHGetSpecialFolderPath(0, shellcon.CSIDL_SYSTEMX86)\n            return shell.SHGetSpecialFolderPath(0, shellcon.CSIDL_SYSTEM)",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "fixup_dbi",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def fixup_dbi():\n    # We used to have a dbi.pyd with our .pyd files, but now have a .py file.\n    # If the user didn't uninstall, they will find the .pyd which will cause\n    # problems - so handle that.\n    import win32api\n    import win32con\n    pyd_name = os.path.join(os.path.dirname(win32api.__file__), \"dbi.pyd\")\n    pyd_d_name = os.path.join(os.path.dirname(win32api.__file__), \"dbi_d.pyd\")\n    py_name = os.path.join(os.path.dirname(win32con.__file__), \"dbi.py\")\n    for this_pyd in (pyd_name, pyd_d_name):",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "install",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def install(lib_dir):\n    import traceback\n    # The .pth file is now installed as a regular file.\n    # Create the .pth file in the site-packages dir, and use only relative paths\n    # We used to write a .pth directly to sys.prefix - clobber it.\n    if os.path.isfile(os.path.join(sys.prefix, \"pywin32.pth\")):\n        os.unlink(os.path.join(sys.prefix, \"pywin32.pth\"))\n    # The .pth may be new and therefore not loaded in this session.\n    # Setup the paths just in case.\n    for name in \"win32 win32\\\\lib Pythonwin\".split():",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "uninstall",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def uninstall(lib_dir):\n    # First ensure our system modules are loaded from pywin32_system, so\n    # we can remove the ones we copied...\n    LoadSystemModule(lib_dir, \"pywintypes\")\n    LoadSystemModule(lib_dir, \"pythoncom\")\n    try:\n        RegisterCOMObjects(False)\n    except Exception as why:\n        print(f\"Failed to unregister COM objects: {why}\")\n    try:",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "verify_destination",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def verify_destination(location: str) -> str:\n    location = os.path.abspath(location)\n    if not os.path.isdir(location):\n        raise argparse.ArgumentTypeError(\n            f'Path \"{location}\" is not an existing directory!'\n        )\n    return location\ndef main():\n    parser = argparse.ArgumentParser(\n        formatter_class=argparse.RawDescriptionHelpFormatter,",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "def main():\n    parser = argparse.ArgumentParser(\n        formatter_class=argparse.RawDescriptionHelpFormatter,\n        description=\"\"\"A post-install script for the pywin32 extensions.\n    * Typical usage:\n    > python -m pywin32_postinstall -install\n    * or (shorter but you don't have control over which python environment is used)\n    > pywin32_postinstall -install\n    You need to execute this script, with a '-install' parameter,\n    to ensure the environment is setup correctly to install COM objects, services, etc.",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "tee_f",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "tee_f = open(\n    os.path.join(\n        tempfile.gettempdir(),  # Send output somewhere so it can be found if necessary...\n        \"pywin32_postinstall.log\",\n    ),\n    \"w\",\n)\nclass Tee:\n    def __init__(self, file):\n        self.f = file",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "sys.stderr",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "sys.stderr = Tee(sys.stderr)\nsys.stdout = Tee(sys.stdout)\ncom_modules = [\n    # module_name,                      class_names\n    (\"win32com.servers.interp\", \"Interpreter\"),\n    (\"win32com.servers.dictionary\", \"DictionaryPolicy\"),\n    (\"win32com.axscript.client.pyscript\", \"PyScript\"),\n]\n# Is this a 'silent' install - ie, avoid all dialogs.\n# Different than 'verbose'",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "sys.stdout",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "sys.stdout = Tee(sys.stdout)\ncom_modules = [\n    # module_name,                      class_names\n    (\"win32com.servers.interp\", \"Interpreter\"),\n    (\"win32com.servers.dictionary\", \"DictionaryPolicy\"),\n    (\"win32com.axscript.client.pyscript\", \"PyScript\"),\n]\n# Is this a 'silent' install - ie, avoid all dialogs.\n# Different than 'verbose'\nsilent = 0",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "com_modules",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "com_modules = [\n    # module_name,                      class_names\n    (\"win32com.servers.interp\", \"Interpreter\"),\n    (\"win32com.servers.dictionary\", \"DictionaryPolicy\"),\n    (\"win32com.axscript.client.pyscript\", \"PyScript\"),\n]\n# Is this a 'silent' install - ie, avoid all dialogs.\n# Different than 'verbose'\nsilent = 0\n# Verbosity of output messages.",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "silent",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "silent = 0\n# Verbosity of output messages.\nverbose = 1\nroot_key_name = \"Software\\\\Python\\\\PythonCore\\\\\" + sys.winver\ndef get_root_hkey():\n    try:\n        winreg.OpenKey(\n            winreg.HKEY_LOCAL_MACHINE, root_key_name, 0, winreg.KEY_CREATE_SUB_KEY\n        )\n        return winreg.HKEY_LOCAL_MACHINE",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "verbose",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "verbose = 1\nroot_key_name = \"Software\\\\Python\\\\PythonCore\\\\\" + sys.winver\ndef get_root_hkey():\n    try:\n        winreg.OpenKey(\n            winreg.HKEY_LOCAL_MACHINE, root_key_name, 0, winreg.KEY_CREATE_SUB_KEY\n        )\n        return winreg.HKEY_LOCAL_MACHINE\n    except OSError:\n        # Either not exist, or no permissions to create subkey means",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "root_key_name",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_postinstall",
+        "description": ".venv.Scripts.pywin32_postinstall",
+        "peekOfCode": "root_key_name = \"Software\\\\Python\\\\PythonCore\\\\\" + sys.winver\ndef get_root_hkey():\n    try:\n        winreg.OpenKey(\n            winreg.HKEY_LOCAL_MACHINE, root_key_name, 0, winreg.KEY_CREATE_SUB_KEY\n        )\n        return winreg.HKEY_LOCAL_MACHINE\n    except OSError:\n        # Either not exist, or no permissions to create subkey means\n        # must be HKCU",
+        "detail": ".venv.Scripts.pywin32_postinstall",
+        "documentation": {}
+    },
+    {
+        "label": "run_test",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "def run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras\n    print(\"--- Running '%s' ---\" % script)\n    sys.stdout.flush()\n    result = subprocess.run(cmd, check=False, cwd=dirname)\n    print(f\"*** Test script '{script}' exited with {result.returncode}\")\n    sys.stdout.flush()\n    if result.returncode:",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "find_and_run",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "def find_and_run(possible_locations, extras):\n    for maybe in possible_locations:\n        if os.path.isfile(maybe):\n            run_test(maybe, extras)\n            break\n    else:\n        raise RuntimeError(\n            \"Failed to locate a test script in one of %s\" % possible_locations\n        )\ndef main():",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "def main():\n    import argparse\n    code_directories = [project_root] + site_packages\n    parser = argparse.ArgumentParser(\n        description=\"A script to trigger tests in all subprojects of PyWin32.\"\n    )\n    parser.add_argument(\n        \"-no-user-interaction\",\n        default=False,\n        action=\"store_true\",",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "project_root",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "project_root = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))\nsite_packages = [site.getusersitepackages()] + site.getsitepackages()\nfailures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "site_packages",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "site_packages = [site.getusersitepackages()] + site.getsitepackages()\nfailures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras\n    print(\"--- Running '%s' ---\" % script)",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "failures",
+        "kind": 5,
+        "importPath": ".venv.Scripts.pywin32_testall",
+        "description": ".venv.Scripts.pywin32_testall",
+        "peekOfCode": "failures = []\n# Run a test using subprocess and wait for the result.\n# If we get an returncode != 0, we know that there was an error, but we don't\n# abort immediately - we run as many tests as we can.\ndef run_test(script, cmdline_extras):\n    dirname, scriptname = os.path.split(script)\n    # some tests prefer to be run from their directory.\n    cmd = [sys.executable, \"-u\", scriptname] + cmdline_extras\n    print(\"--- Running '%s' ---\" % script)\n    sys.stdout.flush()",
+        "detail": ".venv.Scripts.pywin32_testall",
+        "documentation": {}
+    },
+    {
+        "label": "BertForMultiLabelClassification",
+        "kind": 6,
+        "importPath": "indonlu.modules.multi_label_classification",
+        "description": "indonlu.modules.multi_label_classification",
+        "peekOfCode": "class BertForMultiLabelClassification(BertPreTrainedModel):\n    def __init__(self, config):\n        super().__init__(config)\n        self.num_labels = config.num_labels_list\n        self.bert = BertModel(config)\n        self.dropout = nn.Dropout(config.hidden_dropout_prob)\n        self.classifiers = nn.ModuleList([nn.Linear(config.hidden_size, num_label) for num_label in self.num_labels])\n        self.init_weights()\n    def forward(\n        self,",
+        "detail": "indonlu.modules.multi_label_classification",
+        "documentation": {}
+    },
+    {
+        "label": "AlbertForMultiLabelClassification",
+        "kind": 6,
+        "importPath": "indonlu.modules.multi_label_classification",
+        "description": "indonlu.modules.multi_label_classification",
+        "peekOfCode": "class AlbertForMultiLabelClassification(AlbertPreTrainedModel):\n    def __init__(self, config):\n        super().__init__(config)\n        self.num_labels = config.num_labels_list\n        self.albert = AlbertModel(config)\n        self.dropout = nn.Dropout(config.hidden_dropout_prob)\n        self.classifiers = nn.ModuleList([nn.Linear(config.hidden_size, num_label) for num_label in self.num_labels])\n        self.init_weights()\n    def forward(\n        self,",
+        "detail": "indonlu.modules.multi_label_classification",
+        "documentation": {}
+    },
+    {
+        "label": "XLMRobertaForMultiLabelClassification",
+        "kind": 6,
+        "importPath": "indonlu.modules.multi_label_classification",
+        "description": "indonlu.modules.multi_label_classification",
+        "peekOfCode": "class XLMRobertaForMultiLabelClassification(BertPreTrainedModel):\n    config_class = XLMRobertaConfig\n    pretrained_model_archive_map = XLM_ROBERTA_PRETRAINED_MODEL_ARCHIVE_MAP\n    base_model_prefix = \"roberta\"\n    def __init__(self, config):\n        super().__init__(config)\n        self.num_labels = config.num_labels_list\n        self.roberta = XLMRobertaModel(config)\n        self.dropout = nn.Dropout(config.hidden_dropout_prob)\n        self.pooler = nn.Sequential(nn.Linear(config.hidden_size, config.hidden_size), nn.Tanh())",
+        "detail": "indonlu.modules.multi_label_classification",
+        "documentation": {}
+    },
+    {
+        "label": "XLM_ROBERTA_PRETRAINED_MODEL_ARCHIVE_MAP",
+        "kind": 5,
+        "importPath": "indonlu.modules.multi_label_classification",
+        "description": "indonlu.modules.multi_label_classification",
+        "peekOfCode": "XLM_ROBERTA_PRETRAINED_MODEL_ARCHIVE_MAP = {\n    \"xlm-roberta-base\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-roberta-base-pytorch_model.bin\",\n    \"xlm-roberta-large\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-roberta-large-pytorch_model.bin\",\n    \"xlm-roberta-large-finetuned-conll02-dutch\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-roberta-large-finetuned-conll02-dutch-pytorch_model.bin\",\n    \"xlm-roberta-large-finetuned-conll02-spanish\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-roberta-large-finetuned-conll02-spanish-pytorch_model.bin\",\n    \"xlm-roberta-large-finetuned-conll03-english\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-roberta-large-finetuned-conll03-english-pytorch_model.bin\",\n    \"xlm-roberta-large-finetuned-conll03-german\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-roberta-large-finetuned-conll03-german-pytorch_model.bin\",\n}\nXLM_PRETRAINED_MODEL_ARCHIVE_MAP = {\n    \"xlm-mlm-en-2048\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-en-2048-pytorch_model.bin\",",
+        "detail": "indonlu.modules.multi_label_classification",
+        "documentation": {}
+    },
+    {
+        "label": "XLM_PRETRAINED_MODEL_ARCHIVE_MAP",
+        "kind": 5,
+        "importPath": "indonlu.modules.multi_label_classification",
+        "description": "indonlu.modules.multi_label_classification",
+        "peekOfCode": "XLM_PRETRAINED_MODEL_ARCHIVE_MAP = {\n    \"xlm-mlm-en-2048\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-en-2048-pytorch_model.bin\",\n    \"xlm-mlm-ende-1024\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-ende-1024-pytorch_model.bin\",\n    \"xlm-mlm-enfr-1024\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-enfr-1024-pytorch_model.bin\",\n    \"xlm-mlm-enro-1024\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-enro-1024-pytorch_model.bin\",\n    \"xlm-mlm-tlm-xnli15-1024\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-tlm-xnli15-1024-pytorch_model.bin\",\n    \"xlm-mlm-xnli15-1024\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-xnli15-1024-pytorch_model.bin\",\n    \"xlm-clm-enfr-1024\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-clm-enfr-1024-pytorch_model.bin\",\n    \"xlm-clm-ende-1024\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-clm-ende-1024-pytorch_model.bin\",\n    \"xlm-mlm-17-1280\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-17-1280-pytorch_model.bin\",",
+        "detail": "indonlu.modules.multi_label_classification",
+        "documentation": {}
+    },
+    {
+        "label": "BertForWordClassification",
+        "kind": 6,
+        "importPath": "indonlu.modules.word_classification",
+        "description": "indonlu.modules.word_classification",
+        "peekOfCode": "class BertForWordClassification(BertPreTrainedModel):\n    def __init__(self, config):\n        super().__init__(config)\n        self.num_labels = config.num_labels\n        self.bert = BertModel(config)\n        self.dropout = nn.Dropout(config.hidden_dropout_prob)\n        self.classifier = nn.Linear(config.hidden_size, config.num_labels)\n        self.init_weights()\n    def forward(\n        self,",
+        "detail": "indonlu.modules.word_classification",
+        "documentation": {}
+    },
+    {
+        "label": "AlbertForWordClassification",
+        "kind": 6,
+        "importPath": "indonlu.modules.word_classification",
+        "description": "indonlu.modules.word_classification",
+        "peekOfCode": "class AlbertForWordClassification(AlbertPreTrainedModel):\n    def __init__(self, config):\n        super().__init__(config)\n        self.num_labels = config.num_labels\n        self.albert = AlbertModel(config)\n        self.dropout = nn.Dropout(config.hidden_dropout_prob)\n        self.classifier = nn.Linear(config.hidden_size, config.num_labels)\n        self.init_weights()\n    def forward(\n        self,",
+        "detail": "indonlu.modules.word_classification",
+        "documentation": {}
+    },
+    {
+        "label": "XLMForWordClassification",
+        "kind": 6,
+        "importPath": "indonlu.modules.word_classification",
+        "description": "indonlu.modules.word_classification",
+        "peekOfCode": "class XLMForWordClassification(XLMPreTrainedModel):\n    def __init__(self, config):\n        super().__init__(config)\n        self.num_labels = config.num_labels\n        self.transformer = XLMModel(config)\n        self.dropout = nn.Dropout(config.dropout)\n        self.classifier = nn.Linear(config.hidden_size, config.num_labels)\n        self.init_weights()\n    def forward(\n        self,",
+        "detail": "indonlu.modules.word_classification",
+        "documentation": {}
+    },
+    {
+        "label": "XLMRobertaForWordClassification",
+        "kind": 6,
+        "importPath": "indonlu.modules.word_classification",
+        "description": "indonlu.modules.word_classification",
+        "peekOfCode": "class XLMRobertaForWordClassification(BertPreTrainedModel):\n    config_class = XLMRobertaConfig\n    pretrained_model_archive_map = XLM_ROBERTA_PRETRAINED_MODEL_ARCHIVE_MAP\n    base_model_prefix = \"roberta\"\n    def __init__(self, config):\n        super().__init__(config)\n        self.num_labels = config.num_labels\n        self.roberta = XLMRobertaModel(config)\n        self.dropout = nn.Dropout(config.hidden_dropout_prob)\n        self.classifier = nn.Linear(config.hidden_size, config.num_labels)",
+        "detail": "indonlu.modules.word_classification",
+        "documentation": {}
+    },
+    {
+        "label": "XLM_ROBERTA_PRETRAINED_MODEL_ARCHIVE_MAP",
+        "kind": 5,
+        "importPath": "indonlu.modules.word_classification",
+        "description": "indonlu.modules.word_classification",
+        "peekOfCode": "XLM_ROBERTA_PRETRAINED_MODEL_ARCHIVE_MAP = {\n    \"xlm-roberta-base\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-roberta-base-pytorch_model.bin\",\n    \"xlm-roberta-large\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-roberta-large-pytorch_model.bin\",\n    \"xlm-roberta-large-finetuned-conll02-dutch\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-roberta-large-finetuned-conll02-dutch-pytorch_model.bin\",\n    \"xlm-roberta-large-finetuned-conll02-spanish\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-roberta-large-finetuned-conll02-spanish-pytorch_model.bin\",\n    \"xlm-roberta-large-finetuned-conll03-english\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-roberta-large-finetuned-conll03-english-pytorch_model.bin\",\n    \"xlm-roberta-large-finetuned-conll03-german\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-roberta-large-finetuned-conll03-german-pytorch_model.bin\",\n}\nXLM_PRETRAINED_MODEL_ARCHIVE_MAP = {\n    \"xlm-mlm-en-2048\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-en-2048-pytorch_model.bin\",",
+        "detail": "indonlu.modules.word_classification",
+        "documentation": {}
+    },
+    {
+        "label": "XLM_PRETRAINED_MODEL_ARCHIVE_MAP",
+        "kind": 5,
+        "importPath": "indonlu.modules.word_classification",
+        "description": "indonlu.modules.word_classification",
+        "peekOfCode": "XLM_PRETRAINED_MODEL_ARCHIVE_MAP = {\n    \"xlm-mlm-en-2048\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-en-2048-pytorch_model.bin\",\n    \"xlm-mlm-ende-1024\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-ende-1024-pytorch_model.bin\",\n    \"xlm-mlm-enfr-1024\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-enfr-1024-pytorch_model.bin\",\n    \"xlm-mlm-enro-1024\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-enro-1024-pytorch_model.bin\",\n    \"xlm-mlm-tlm-xnli15-1024\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-tlm-xnli15-1024-pytorch_model.bin\",\n    \"xlm-mlm-xnli15-1024\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-xnli15-1024-pytorch_model.bin\",\n    \"xlm-clm-enfr-1024\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-clm-enfr-1024-pytorch_model.bin\",\n    \"xlm-clm-ende-1024\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-clm-ende-1024-pytorch_model.bin\",\n    \"xlm-mlm-17-1280\": \"https://s3.amazonaws.com/models.huggingface.co/bert/xlm-mlm-17-1280-pytorch_model.bin\",",
+        "detail": "indonlu.modules.word_classification",
+        "documentation": {}
+    },
+    {
+        "label": "print_opts",
+        "kind": 2,
+        "importPath": "indonlu.utils.args_helper",
+        "description": "indonlu.utils.args_helper",
+        "peekOfCode": "def print_opts(opts):\n    \"\"\"Prints the values of all command-line arguments.\n    \"\"\"\n    print('=' * 80)\n    print('Opts'.center(80))\n    print('-' * 80)\n    for key in opts.keys():\n        if opts[key]:\n            print('{:>30}: {:<50}'.format(key, opts[key]).center(80))\n    print('=' * 80)",
+        "detail": "indonlu.utils.args_helper",
+        "documentation": {}
+    },
+    {
+        "label": "get_parser",
+        "kind": 2,
+        "importPath": "indonlu.utils.args_helper",
+        "description": "indonlu.utils.args_helper",
+        "peekOfCode": "def get_parser():\n    parser = ArgumentParser()\n    parser.add_argument(\"--experiment_name\", type=str, default=\"exp\", help=\"Experiment name\")\n    parser.add_argument(\"--model_dir\", type=str, default=\"save/\", help=\"Model directory\")\n    parser.add_argument(\"--dataset\", type=str, default='emotion-twitter', help=\"Choose between emotion-twitter, absa-airy, term-extraction-airy, ner-grit, pos-idn, entailment-ui, doc-sentiment-prosa, keyword-extraction-prosa, qa-factoid-itb, news-category-prosa, ner-prosa, pos-prosa\")\n    parser.add_argument(\"--model_checkpoint\", type=str, default=\"bert-base-multilingual-uncased\", help=\"Path, url or short name of the model\")\n    parser.add_argument(\"--max_seq_len\", type=int, default=512, help=\"Max number of tokens\")\n    parser.add_argument(\"--train_batch_size\", type=int, default=4, help=\"Batch size for training\")\n    parser.add_argument(\"--valid_batch_size\", type=int, default=4, help=\"Batch size for validation\")\n    # parser.add_argument(\"--gradient_accumulation_steps\", type=int, default=8, help=\"Accumulate gradients on several steps\")",
+        "detail": "indonlu.utils.args_helper",
+        "documentation": {}
+    },
+    {
+        "label": "get_eval_parser",
+        "kind": 2,
+        "importPath": "indonlu.utils.args_helper",
+        "description": "indonlu.utils.args_helper",
+        "peekOfCode": "def get_eval_parser():\n    parser = ArgumentParser()\n    parser.add_argument(\"--experiment_name\", type=str, default=\"exp\", help=\"Experiment name\")\n    parser.add_argument(\"--model_dir\", type=str, default=\"./save\", help=\"Model directory\")\n    parser.add_argument(\"--dataset\", type=str, default='emotion-twitter', help=\"Choose between emotion-twitter, absa-airy, term-extraction-airy, ner-grit, pos-idn, entailment-ui, doc-sentiment-prosa, keyword-extraction-prosa, qa-factoid-itb, news-category-prosa, ner-prosa, pos-prosa\")\n    parser.add_argument(\"--model_type\", type=str, default=\"bert-base-multilingual-uncased\", help=\"Type of the model\")\n    parser.add_argument(\"--max_seq_len\", type=int, default=512, help=\"Max number of tokens\")\n    parser.add_argument(\"--batch_size\", type=int, default=4, help=\"Batch size for evaluation\")\n    parser.add_argument(\"--debug\", action='store_true', help=\"debugging mode\")\n    parser.add_argument(\"--no_special_token\", action='store_true', help=\"not adding special token as the input\")",
+        "detail": "indonlu.utils.args_helper",
+        "documentation": {}
+    },
+    {
+        "label": "append_dataset_args",
+        "kind": 2,
+        "importPath": "indonlu.utils.args_helper",
+        "description": "indonlu.utils.args_helper",
+        "peekOfCode": "def append_dataset_args(args):    \n    if args['dataset'] == \"emotion-twitter\":\n        args['task'] = 'sequence_classification'\n        args['num_labels'] = EmotionDetectionDataset.NUM_LABELS\n        args['dataset_class'] = EmotionDetectionDataset\n        args['dataloader_class'] = EmotionDetectionDataLoader\n        args['forward_fn'] = forward_sequence_classification\n        args['metrics_fn'] = emotion_detection_metrics_fn\n        args['valid_criterion'] = 'F1'\n        args['train_set_path'] = './dataset/emot_emotion-twitter/train_preprocess.csv'",
+        "detail": "indonlu.utils.args_helper",
+        "documentation": {}
+    },
+    {
+        "label": "EvalCounts",
+        "kind": 6,
+        "importPath": "indonlu.utils.conlleval",
+        "description": "indonlu.utils.conlleval",
+        "peekOfCode": "class EvalCounts(object):\n    def __init__(self):\n        self.correct_chunk = 0    # number of correctly identified chunks\n        self.correct_tags = 0     # number of correct chunk tags\n        self.found_correct = 0    # number of chunks in corpus\n        self.found_guessed = 0    # number of identified chunks\n        self.token_counter = 0    # token counter (ignores sentence breaks)\n        # counts by type\n        self.t_correct_chunk = defaultdict(int)\n        self.t_found_correct = defaultdict(int)",
+        "detail": "indonlu.utils.conlleval",
+        "documentation": {}
+    },
+    {
+        "label": "parse_tag",
+        "kind": 2,
+        "importPath": "indonlu.utils.conlleval",
+        "description": "indonlu.utils.conlleval",
+        "peekOfCode": "def parse_tag(t):\n    m = re.match(r'^([^-]*)-(.*)$', t)\n    return m.groups() if m else (t, '')\ndef start_of_chunk(prev_tag, tag, prev_type, type_):\n    # check if a chunk started between the previous and current word\n    # arguments: previous and current chunk tags, previous and current types\n    chunk_start = False\n    if tag == 'B': chunk_start = True\n    if tag == 'S': chunk_start = True\n    if prev_tag == 'E' and tag == 'E': chunk_start = True",
+        "detail": "indonlu.utils.conlleval",
+        "documentation": {}
+    },
+    {
+        "label": "start_of_chunk",
+        "kind": 2,
+        "importPath": "indonlu.utils.conlleval",
+        "description": "indonlu.utils.conlleval",
+        "peekOfCode": "def start_of_chunk(prev_tag, tag, prev_type, type_):\n    # check if a chunk started between the previous and current word\n    # arguments: previous and current chunk tags, previous and current types\n    chunk_start = False\n    if tag == 'B': chunk_start = True\n    if tag == 'S': chunk_start = True\n    if prev_tag == 'E' and tag == 'E': chunk_start = True\n    if prev_tag == 'E' and tag == 'I': chunk_start = True\n    if prev_tag == 'S' and tag == 'E': chunk_start = True\n    if prev_tag == 'S' and tag == 'I': chunk_start = True",
+        "detail": "indonlu.utils.conlleval",
+        "documentation": {}
+    },
+    {
+        "label": "end_of_chunk",
+        "kind": 2,
+        "importPath": "indonlu.utils.conlleval",
+        "description": "indonlu.utils.conlleval",
+        "peekOfCode": "def end_of_chunk(prev_tag, tag, prev_type, type_):\n    # check if a chunk ended between the previous and current word\n    # arguments: previous and current chunk tags, previous and current types\n    chunk_end = False\n    if prev_tag == 'E': chunk_end = True\n    if prev_tag == 'S': chunk_end = True\n    if prev_tag == 'B' and tag == 'B': chunk_end = True\n    if prev_tag == 'B' and tag == 'S': chunk_end = True\n    if prev_tag == 'B' and tag == 'O': chunk_end = True\n    if prev_tag == 'I' and tag == 'B': chunk_end = True",
+        "detail": "indonlu.utils.conlleval",
+        "documentation": {}
+    },
+    {
+        "label": "evaluate_fn",
+        "kind": 2,
+        "importPath": "indonlu.utils.conlleval",
+        "description": "indonlu.utils.conlleval",
+        "peekOfCode": "def evaluate_fn(guessed, correct, last_correct, last_correct_type, last_guessed, last_guessed_type, in_correct, counts):\n    guessed, guessed_type = parse_tag(guessed)\n    correct, correct_type = parse_tag(correct)\n    end_correct = end_of_chunk(last_correct, correct,\n                               last_correct_type, correct_type)\n    end_guessed = end_of_chunk(last_guessed, guessed,\n                               last_guessed_type, guessed_type)\n    start_correct = start_of_chunk(last_correct, correct,\n                                   last_correct_type, correct_type)\n    start_guessed = start_of_chunk(last_guessed, guessed,",
+        "detail": "indonlu.utils.conlleval",
+        "documentation": {}
+    },
+    {
+        "label": "evaluate",
+        "kind": 2,
+        "importPath": "indonlu.utils.conlleval",
+        "description": "indonlu.utils.conlleval",
+        "peekOfCode": "def evaluate(hyps_list, labels_list):\n    counts = EvalCounts()\n    num_features = None       # number of features per line\n    in_correct = False        # currently processed chunks is correct until now\n    last_correct = 'O'        # previous chunk tag in corpus\n    last_correct_type = ''    # type of previously identified chunk tag\n    last_guessed = 'O'        # previously identified chunk tag\n    last_guessed_type = ''    # type of previous chunk tag in corpus\n    for hyps, labels in zip(hyps_list, labels_list):\n        for hyp, label in zip(hyps, labels):",
+        "detail": "indonlu.utils.conlleval",
+        "documentation": {}
+    },
+    {
+        "label": "uniq",
+        "kind": 2,
+        "importPath": "indonlu.utils.conlleval",
+        "description": "indonlu.utils.conlleval",
+        "peekOfCode": "def uniq(iterable):\n    seen = set()\n    return [i for i in iterable if not (i in seen or seen.add(i))]\ndef calculate_metrics(correct, guessed, total):\n    tp, fp, fn = correct, guessed-correct, total-correct\n    p = 0 if tp + fp == 0 else 1.*tp / (tp + fp)\n    r = 0 if tp + fn == 0 else 1.*tp / (tp + fn)\n    f = 0 if p + r == 0 else (2 * p * r) / (p + r)\n    return Metrics(tp, fp, fn, p, r, f)\ndef metrics(counts):",
+        "detail": "indonlu.utils.conlleval",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_metrics",
+        "kind": 2,
+        "importPath": "indonlu.utils.conlleval",
+        "description": "indonlu.utils.conlleval",
+        "peekOfCode": "def calculate_metrics(correct, guessed, total):\n    tp, fp, fn = correct, guessed-correct, total-correct\n    p = 0 if tp + fp == 0 else 1.*tp / (tp + fp)\n    r = 0 if tp + fn == 0 else 1.*tp / (tp + fn)\n    f = 0 if p + r == 0 else (2 * p * r) / (p + r)\n    return Metrics(tp, fp, fn, p, r, f)\ndef metrics(counts):\n    c = counts\n    overall = calculate_metrics(\n        c.correct_chunk, c.found_guessed, c.found_correct",
+        "detail": "indonlu.utils.conlleval",
+        "documentation": {}
+    },
+    {
+        "label": "metrics",
+        "kind": 2,
+        "importPath": "indonlu.utils.conlleval",
+        "description": "indonlu.utils.conlleval",
+        "peekOfCode": "def metrics(counts):\n    c = counts\n    overall = calculate_metrics(\n        c.correct_chunk, c.found_guessed, c.found_correct\n    )\n    by_type = {}\n    for t in uniq(list(c.t_found_correct.keys()) + list(c.t_found_guessed.keys())):\n        by_type[t] = calculate_metrics(\n            c.t_correct_chunk[t], c.t_found_guessed[t], c.t_found_correct[t]\n        )",
+        "detail": "indonlu.utils.conlleval",
+        "documentation": {}
+    },
+    {
+        "label": "conll_evaluation",
+        "kind": 2,
+        "importPath": "indonlu.utils.conlleval",
+        "description": "indonlu.utils.conlleval",
+        "peekOfCode": "def conll_evaluation(hyps_list, labels_list):\n    counts = evaluate(hyps_list, labels_list)\n    overall, by_type = metrics(counts)\n    c = counts\n    acc = c.correct_tags / c.token_counter\n    pre = overall.prec\n    rec = overall.rec\n    f1 = overall.fscore\n    type_macro_pre = 0.0\n    type_macro_rec = 0.0",
+        "detail": "indonlu.utils.conlleval",
+        "documentation": {}
+    },
+    {
+        "label": "Metrics",
+        "kind": 5,
+        "importPath": "indonlu.utils.conlleval",
+        "description": "indonlu.utils.conlleval",
+        "peekOfCode": "Metrics = namedtuple('Metrics', 'tp fp fn prec rec fscore')\nclass EvalCounts(object):\n    def __init__(self):\n        self.correct_chunk = 0    # number of correctly identified chunks\n        self.correct_tags = 0     # number of correct chunk tags\n        self.found_correct = 0    # number of chunks in corpus\n        self.found_guessed = 0    # number of identified chunks\n        self.token_counter = 0    # token counter (ignores sentence breaks)\n        # counts by type\n        self.t_correct_chunk = defaultdict(int)",
+        "detail": "indonlu.utils.conlleval",
+        "documentation": {}
+    },
+    {
+        "label": "AspectExtractionDataset",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class AspectExtractionDataset(Dataset):\n    # Static constant variable\n    LABEL2INDEX = {'I-SENTIMENT': 0, 'O': 1, 'I-ASPECT': 2, 'B-SENTIMENT': 3, 'B-ASPECT': 4}\n    INDEX2LABEL = {0: 'I-SENTIMENT', 1: 'O', 2: 'I-ASPECT', 3: 'B-SENTIMENT', 4: 'B-ASPECT'}\n    NUM_LABELS = 5\n    def load_dataset(self, path):\n        # Read file\n        data = open(path,'r').readlines()\n        # Prepare buffer\n        dataset = []",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "AspectExtractionDataLoader",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class AspectExtractionDataLoader(DataLoader):\n    def __init__(self, max_seq_len=512, *args, **kwargs):\n        super(AspectExtractionDataLoader, self).__init__(*args, **kwargs)\n        self.collate_fn = self._collate_fn\n        self.max_seq_len = max_seq_len\n    def _collate_fn(self, batch):\n        batch_size = len(batch)\n        max_seq_len = max(map(lambda x: len(x[0]), batch))\n        max_seq_len = min(self.max_seq_len, max_seq_len)\n        max_tgt_len = max(map(lambda x: len(x[2]), batch))",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "NerGritDataset",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class NerGritDataset(Dataset):\n    # Static constant variable\n    LABEL2INDEX = {'I-PERSON': 0, 'B-ORGANISATION': 1, 'I-ORGANISATION': 2, 'B-PLACE': 3, 'I-PLACE': 4, 'O': 5, 'B-PERSON': 6}\n    INDEX2LABEL = {0: 'I-PERSON', 1: 'B-ORGANISATION', 2: 'I-ORGANISATION', 3: 'B-PLACE', 4: 'I-PLACE', 5: 'O', 6: 'B-PERSON'}\n    NUM_LABELS = 7\n    def load_dataset(self, path):\n        # Read file\n        data = open(path,'r').readlines()\n        # Prepare buffer\n        dataset = []",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "NerProsaDataset",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class NerProsaDataset(Dataset):\n    # Static constant variable\n    LABEL2INDEX = {'I-PPL': 0, 'B-EVT': 1, 'B-PLC': 2, 'I-IND': 3, 'B-IND': 4, 'B-FNB': 5, 'I-EVT': 6, 'B-PPL': 7, 'I-PLC': 8, 'O': 9, 'I-FNB': 10}\n    INDEX2LABEL = {0: 'I-PPL', 1: 'B-EVT', 2: 'B-PLC', 3: 'I-IND', 4: 'B-IND', 5: 'B-FNB', 6: 'I-EVT', 7: 'B-PPL', 8: 'I-PLC', 9: 'O', 10: 'I-FNB'}\n    NUM_LABELS = 11\n    def load_dataset(self, path):\n        # Read file\n        data = open(path,'r').readlines()\n        # Prepare buffer\n        dataset = []",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "NerDataLoader",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class NerDataLoader(DataLoader):\n    def __init__(self, max_seq_len=512, *args, **kwargs):\n        super(NerDataLoader, self).__init__(*args, **kwargs)\n        self.collate_fn = self._collate_fn\n        self.max_seq_len = max_seq_len\n    def _collate_fn(self, batch):\n        batch_size = len(batch)\n        max_seq_len = max(map(lambda x: len(x[0]), batch))\n        max_seq_len = min(self.max_seq_len, max_seq_len)\n        max_tgt_len = max(map(lambda x: len(x[2]), batch))",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "PosTagIdnDataset",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class PosTagIdnDataset(Dataset):\n    # Static constant variable\n    LABEL2INDEX = {'B-PR': 0, 'B-CD': 1, 'I-PR': 2, 'B-SYM': 3, 'B-JJ': 4, 'B-DT': 5, 'I-UH': 6, 'I-NND': 7, 'B-SC': 8, 'I-WH': 9, 'I-IN': 10, 'I-NNP': 11, 'I-VB': 12, 'B-IN': 13, 'B-NND': 14, 'I-CD': 15, 'I-JJ': 16, 'I-X': 17, 'B-OD': 18, 'B-RP': 19, 'B-RB': 20, 'B-NNP': 21, 'I-RB': 22, 'I-Z': 23, 'B-CC': 24, 'B-NEG': 25, 'B-VB': 26, 'B-NN': 27, 'B-MD': 28, 'B-UH': 29, 'I-NN': 30, 'B-PRP': 31, 'I-SC': 32, 'B-Z': 33, 'I-PRP': 34, 'I-OD': 35, 'I-SYM': 36, 'B-WH': 37, 'B-FW': 38, 'I-CC': 39, 'B-X': 40}\n    INDEX2LABEL = {0: 'B-PR', 1: 'B-CD', 2: 'I-PR', 3: 'B-SYM', 4: 'B-JJ', 5: 'B-DT', 6: 'I-UH', 7: 'I-NND', 8: 'B-SC', 9: 'I-WH', 10: 'I-IN', 11: 'I-NNP', 12: 'I-VB', 13: 'B-IN', 14: 'B-NND', 15: 'I-CD', 16: 'I-JJ', 17: 'I-X', 18: 'B-OD', 19: 'B-RP', 20: 'B-RB', 21: 'B-NNP', 22: 'I-RB', 23: 'I-Z', 24: 'B-CC', 25: 'B-NEG', 26: 'B-VB', 27: 'B-NN', 28: 'B-MD', 29: 'B-UH', 30: 'I-NN', 31: 'B-PRP', 32: 'I-SC', 33: 'B-Z', 34: 'I-PRP', 35: 'I-OD', 36: 'I-SYM', 37: 'B-WH', 38: 'B-FW', 39: 'I-CC', 40: 'B-X'}\n    NUM_LABELS = 41\n    def load_dataset(self, path):\n        # Read file\n        data = open(path,'r').readlines()\n        # Prepare buffer\n        dataset = []",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "PosTagProsaDataset",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class PosTagProsaDataset(Dataset):\n    # Static constant variable\n    LABEL2INDEX = {'B-PPO': 0, 'B-KUA': 1, 'B-ADV': 2, 'B-PRN': 3, 'B-VBI': 4, 'B-PAR': 5, 'B-VBP': 6, 'B-NNP': 7, 'B-UNS': 8, 'B-VBT': 9, 'B-VBL': 10, 'B-NNO': 11, 'B-ADJ': 12, 'B-PRR': 13, 'B-PRK': 14, 'B-CCN': 15, 'B-$$$': 16, 'B-ADK': 17, 'B-ART': 18, 'B-CSN': 19, 'B-NUM': 20, 'B-SYM': 21, 'B-INT': 22, 'B-NEG': 23, 'B-PRI': 24, 'B-VBE': 25}\n    INDEX2LABEL = {0: 'B-PPO', 1: 'B-KUA', 2: 'B-ADV', 3: 'B-PRN', 4: 'B-VBI', 5: 'B-PAR', 6: 'B-VBP', 7: 'B-NNP', 8: 'B-UNS', 9: 'B-VBT', 10: 'B-VBL', 11: 'B-NNO', 12: 'B-ADJ', 13: 'B-PRR', 14: 'B-PRK', 15: 'B-CCN', 16: 'B-$$$', 17: 'B-ADK', 18: 'B-ART', 19: 'B-CSN', 20: 'B-NUM', 21: 'B-SYM', 22: 'B-INT', 23: 'B-NEG', 24: 'B-PRI', 25: 'B-VBE'}\n    NUM_LABELS = 26\n    def load_dataset(self, path):\n        # Read file\n        data = open(path,'r').readlines()\n        # Prepare buffer\n        dataset = []",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "PosTagDataLoader",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class PosTagDataLoader(DataLoader):\n    def __init__(self, max_seq_len=512, *args, **kwargs):\n        super(PosTagDataLoader, self).__init__(*args, **kwargs)\n        self.collate_fn = self._collate_fn\n        self.max_seq_len = max_seq_len\n    def _collate_fn(self, batch):\n        batch_size = len(batch)\n        max_seq_len = max(map(lambda x: len(x[0]), batch))\n        max_seq_len = min(self.max_seq_len, max_seq_len)\n        max_tgt_len = max(map(lambda x: len(x[2]), batch))",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "EmotionDetectionDataset",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class EmotionDetectionDataset(Dataset):\n    # Static constant variable\n    LABEL2INDEX = {'sadness': 0, 'anger': 1, 'love': 2, 'fear': 3, 'happy': 4}\n    INDEX2LABEL = {0: 'sadness', 1: 'anger', 2: 'love', 3: 'fear', 4: 'happy'}\n    NUM_LABELS = 5\n    def load_dataset(self, path):\n        # Load dataset\n        dataset = pd.read_csv(path)\n        dataset['label'] = dataset['label'].apply(lambda sen: self.LABEL2INDEX[sen])\n        return dataset",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "EmotionDetectionDataLoader",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class EmotionDetectionDataLoader(DataLoader):\n    def __init__(self, max_seq_len=512, *args, **kwargs):\n        super(EmotionDetectionDataLoader, self).__init__(*args, **kwargs)\n        self.collate_fn = self._collate_fn\n        self.max_seq_len = max_seq_len\n    def _collate_fn(self, batch):\n        batch_size = len(batch)\n        max_seq_len = max(map(lambda x: len(x[0]), batch))\n        max_seq_len = min(self.max_seq_len, max_seq_len)\n        subword_batch = np.zeros((batch_size, max_seq_len), dtype=np.int64)",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "EntailmentDataset",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class EntailmentDataset(Dataset):\n    # Static constant variable\n    LABEL2INDEX = {'NotEntail': 0, 'Entail_or_Paraphrase': 1}\n    INDEX2LABEL = {0: 'NotEntail', 1: 'Entail_or_Paraphrase'}\n    NUM_LABELS = 2\n    def load_dataset(self, path):\n        df = pd.read_csv(path)\n        df['label'] = df['label'].apply(lambda label: self.LABEL2INDEX[label])\n        return df\n    def __init__(self, dataset_path, tokenizer, no_special_token=False, *args, **kwargs):",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "EntailmentDataLoader",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class EntailmentDataLoader(DataLoader):\n    def __init__(self, max_seq_len=512, *args, **kwargs):\n        super(EntailmentDataLoader, self).__init__(*args, **kwargs)\n        self.collate_fn = self._collate_fn\n        self.max_seq_len = max_seq_len\n    def _collate_fn(self, batch):\n        batch_size = len(batch)\n        max_seq_len = max(map(lambda x: len(x[0]), batch))\n        max_seq_len = min(self.max_seq_len, max_seq_len)\n        subword_batch = np.zeros((batch_size, max_seq_len), dtype=np.int64)",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "DocumentSentimentDataset",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class DocumentSentimentDataset(Dataset):\n    # Static constant variable\n    LABEL2INDEX = {'positive': 0, 'neutral': 1, 'negative': 2}\n    INDEX2LABEL = {0: 'positive', 1: 'neutral', 2: 'negative'}\n    NUM_LABELS = 3\n    def load_dataset(self, path): \n        df = pd.read_csv(path, sep='\\t', header=None)\n        df.columns = ['text','sentiment']\n        df['sentiment'] = df['sentiment'].apply(lambda lab: self.LABEL2INDEX[lab])\n        return df",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "DocumentSentimentDataLoader",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class DocumentSentimentDataLoader(DataLoader):\n    def __init__(self, max_seq_len=512, *args, **kwargs):\n        super(DocumentSentimentDataLoader, self).__init__(*args, **kwargs)\n        self.collate_fn = self._collate_fn\n        self.max_seq_len = max_seq_len\n    def _collate_fn(self, batch):\n        batch_size = len(batch)\n        max_seq_len = max(map(lambda x: len(x[0]), batch))\n        max_seq_len = min(self.max_seq_len, max_seq_len)\n        subword_batch = np.zeros((batch_size, max_seq_len), dtype=np.int64)",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "KeywordExtractionDataset",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class KeywordExtractionDataset(Dataset):\n    # Static constant variable\n    LABEL2INDEX = {'O':0, 'B':1, 'I':2}\n    INDEX2LABEL = {0:'O', 1:'B', 2:'I'}\n    NUM_LABELS = 3\n    def load_dataset(self, path):\n        # Read file\n        data = open(path,'r').readlines()\n        # Prepare buffer\n        dataset = []",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "KeywordExtractionDataLoader",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class KeywordExtractionDataLoader(DataLoader):\n    def __init__(self, max_seq_len=512, *args, **kwargs):\n        super(KeywordExtractionDataLoader, self).__init__(*args, **kwargs)\n        self.collate_fn = self._collate_fn\n        self.max_seq_len = max_seq_len\n    def _collate_fn(self, batch):\n        batch_size = len(batch)\n        max_seq_len = max(map(lambda x: len(x[0]), batch))\n        max_seq_len = min(self.max_seq_len, max_seq_len)\n        max_tgt_len = max(map(lambda x: len(x[2]), batch))",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "QAFactoidDataset",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class QAFactoidDataset(Dataset):\n    # Static constant variable\n    LABEL2INDEX = {'O':0, 'B':1, 'I':2}\n    INDEX2LABEL = {0:'O', 1:'B', 2:'I'}\n    NUM_LABELS = 3\n    def load_dataset(self, path):\n        # Read file\n        dataset = pd.read_csv(path)\n        # Question and passage are a list of words and seq_label is list of B/I/O\n        dataset['question'] = dataset['question'].apply(lambda x: eval(x))",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "QAFactoidDataLoader",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class QAFactoidDataLoader(DataLoader):\n    def __init__(self, max_seq_len=512, *args, **kwargs):\n        super(QAFactoidDataLoader, self).__init__(*args, **kwargs)\n        self.collate_fn = self._collate_fn\n        self.max_seq_len = max_seq_len\n    def _collate_fn(self, batch):\n        batch_size = len(batch)\n        max_seq_len = max(map(lambda x: len(x[0]), batch))\n        max_seq_len = min(self.max_seq_len, max_seq_len)\n        max_tgt_len = max(map(lambda x: len(x[3]), batch))",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "AspectBasedSentimentAnalysisAiryDataset",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class AspectBasedSentimentAnalysisAiryDataset(Dataset):\n    # Static constant variable\n    ASPECT_DOMAIN = ['ac', 'air_panas', 'bau', 'general', 'kebersihan', 'linen', 'service', 'sunrise_meal', 'tv', 'wifi']\n    LABEL2INDEX = {'neg': 0, 'neut': 1, 'pos': 2, 'neg_pos': 3}\n    INDEX2LABEL = {0: 'neg', 1: 'neut', 2: 'pos', 3: 'neg_pos'}\n    NUM_LABELS = [4, 4, 4, 4, 4, 4, 4, 4, 4, 4]\n    NUM_ASPECTS = 10\n    def load_dataset(self, path):\n        df = pd.read_csv(path)\n        for aspect in self.ASPECT_DOMAIN:",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "AspectBasedSentimentAnalysisProsaDataset",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class AspectBasedSentimentAnalysisProsaDataset(Dataset):\n    # Static constant variable\n    ASPECT_DOMAIN = ['fuel', 'machine', 'others', 'part', 'price', 'service']\n    LABEL2INDEX = {'negative': 0, 'neutral': 1, 'positive': 2}\n    INDEX2LABEL = {0: 'negative', 1: 'neutral', 2: 'positive'}\n    NUM_LABELS = [3, 3, 3, 3, 3, 3]\n    NUM_ASPECTS = 6\n    def load_dataset(self, path):\n        df = pd.read_csv(path)\n        for aspect in self.ASPECT_DOMAIN:",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "AspectBasedSentimentAnalysisDataLoader",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class AspectBasedSentimentAnalysisDataLoader(DataLoader):\n    def __init__(self, dataset, max_seq_len=512, *args, **kwargs):\n        super(AspectBasedSentimentAnalysisDataLoader, self).__init__(dataset=dataset, *args, **kwargs)\n        self.num_aspects = dataset.NUM_ASPECTS\n        self.collate_fn = self._collate_fn\n        self.max_seq_len = max_seq_len\n    def _collate_fn(self, batch):\n        batch_size = len(batch)\n        max_seq_len = max(map(lambda x: len(x[0]), batch))\n        max_seq_len = min(self.max_seq_len, max_seq_len)",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "NewsCategorizationDataset",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class NewsCategorizationDataset(Dataset):\n    # Static constant variable\n    LABEL2INDEX = {'permasalahan pada bank besar domestik': 0, 'pertumbuhan ekonomi domestik yang terbatas': 1, 'volatilitas harga komoditas utama dunia': 2, 'frekuensi kenaikan fed fund rate (ffr) yang melebihi ekspektasi': 3, 'perubahan kebijakan dan/atau regulasi pada institusi keuangan': 4, 'isu politik domestik': 5, 'permasalahan pada bank besar international': 6, 'perubahan kebijakan pemerintah yang berkaitan dengan fiskal': 7, 'pertumbuhan ekonomi global yang terbatas': 8, 'kebijakan pemerintah yang bersifat sektoral': 9, 'isu politik dan ekonomi luar negeri': 10, 'kenaikan harga volatile food': 11, 'tidak berisiko': 12, 'pergerakan harga minyak mentah dunia': 13, 'force majeure yang memengaruhi operasional sistem keuangan': 14, 'kenaikan administered price': 15}\n    INDEX2LABEL = {0: 'permasalahan pada bank besar domestik', 1: 'pertumbuhan ekonomi domestik yang terbatas', 2: 'volatilitas harga komoditas utama dunia', 3: 'frekuensi kenaikan fed fund rate (ffr) yang melebihi ekspektasi', 4: 'perubahan kebijakan dan/atau regulasi pada institusi keuangan', 5: 'isu politik domestik', 6: 'permasalahan pada bank besar international', 7: 'perubahan kebijakan pemerintah yang berkaitan dengan fiskal', 8: 'pertumbuhan ekonomi global yang terbatas', 9: 'kebijakan pemerintah yang bersifat sektoral', 10: 'isu politik dan ekonomi luar negeri', 11: 'kenaikan harga volatile food', 12: 'tidak berisiko', 13: 'pergerakan harga minyak mentah dunia', 14: 'force majeure yang memengaruhi operasional sistem keuangan', 15: 'kenaikan administered price'}\n    NUM_LABELS = 16\n    def load_dataset(self, path):\n        dataset = pd.read_csv(path, sep='\\t', header=None)\n        dataset.columns = ['text', 'label']\n        dataset['label'] = dataset['label'].apply(lambda labels: [self.LABEL2INDEX[label] for label in labels.split(',')])\n        return dataset",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "NewsCategorizationDataLoader",
+        "kind": 6,
+        "importPath": "indonlu.utils.data_utils",
+        "description": "indonlu.utils.data_utils",
+        "peekOfCode": "class NewsCategorizationDataLoader(DataLoader):\n    def __init__(self, max_seq_len=512, *args, **kwargs):\n        super(NewsCategorizationDataLoader, self).__init__(*args, **kwargs)\n        self.collate_fn = self._collate_fn\n        self.max_seq_len = max_seq_len\n    def _collate_fn(self, batch):\n        batch_size = len(batch)\n        max_seq_len = max(map(lambda x: len(x[0]), batch))\n        max_seq_len = min(self.max_seq_len, max_seq_len)\n        # Trimmed input based on specified max_len",
+        "detail": "indonlu.utils.data_utils",
+        "documentation": {}
+    },
+    {
+        "label": "forward_sequence_classification",
+        "kind": 2,
+        "importPath": "indonlu.utils.forward_fn",
+        "description": "indonlu.utils.forward_fn",
+        "peekOfCode": "def forward_sequence_classification(model, batch_data, i2w, is_test=False, device='cpu', **kwargs):\n    # Unpack batch data\n    if len(batch_data) == 3:\n        (subword_batch, mask_batch, label_batch) = batch_data\n        token_type_batch = None\n    elif len(batch_data) == 4:\n        (subword_batch, mask_batch, token_type_batch, label_batch) = batch_data\n    # Prepare input & label\n    subword_batch = torch.LongTensor(subword_batch)\n    mask_batch = torch.FloatTensor(mask_batch)",
+        "detail": "indonlu.utils.forward_fn",
+        "documentation": {}
+    },
+    {
+        "label": "forward_word_classification",
+        "kind": 2,
+        "importPath": "indonlu.utils.forward_fn",
+        "description": "indonlu.utils.forward_fn",
+        "peekOfCode": "def forward_word_classification(model, batch_data, i2w, is_test=False, device='cpu', **kwargs):\n    # Unpack batch data\n    if len(batch_data) == 4:\n        (subword_batch, mask_batch, subword_to_word_indices_batch, label_batch) = batch_data\n        token_type_batch = None\n    elif len(batch_data) == 5:\n        (subword_batch, mask_batch, token_type_batch, subword_to_word_indices_batch, label_batch) = batch_data\n    # Prepare input & label\n    subword_batch = torch.LongTensor(subword_batch)\n    mask_batch = torch.FloatTensor(mask_batch)",
+        "detail": "indonlu.utils.forward_fn",
+        "documentation": {}
+    },
+    {
+        "label": "forward_sequence_multi_classification",
+        "kind": 2,
+        "importPath": "indonlu.utils.forward_fn",
+        "description": "indonlu.utils.forward_fn",
+        "peekOfCode": "def forward_sequence_multi_classification(model, batch_data, i2w, is_test=False, device='cpu', **kwargs):\n    # Unpack batch data\n    if len(batch_data) == 3:\n        (subword_batch, mask_batch, label_batch) = batch_data\n        token_type_batch = None\n    elif len(batch_data) == 4:\n        (subword_batch, mask_batch, token_type_batch, label_batch) = batch_data\n    # Prepare input & label\n    subword_batch = torch.LongTensor(subword_batch)\n    mask_batch = torch.FloatTensor(mask_batch)",
+        "detail": "indonlu.utils.forward_fn",
+        "documentation": {}
+    },
+    {
+        "label": "WordSplitTokenizer",
+        "kind": 6,
+        "importPath": "indonlu.utils.functions",
+        "description": "indonlu.utils.functions",
+        "peekOfCode": "class WordSplitTokenizer():\n    def tokenize(self, string):\n        return string.split()\nclass SimpleTokenizer():\n    def __init__(self, vocab, word_tokenizer, lower=True):\n        self.vocab = vocab\n        self.lower = lower\n        idx = len(self.vocab.keys())\n        self.vocab[\"<bos>\"] = idx+0\n        self.vocab[\"<|endoftext|>\"] = idx+1",
+        "detail": "indonlu.utils.functions",
+        "documentation": {}
+    },
+    {
+        "label": "SimpleTokenizer",
+        "kind": 6,
+        "importPath": "indonlu.utils.functions",
+        "description": "indonlu.utils.functions",
+        "peekOfCode": "class SimpleTokenizer():\n    def __init__(self, vocab, word_tokenizer, lower=True):\n        self.vocab = vocab\n        self.lower = lower\n        idx = len(self.vocab.keys())\n        self.vocab[\"<bos>\"] = idx+0\n        self.vocab[\"<|endoftext|>\"] = idx+1\n        self.vocab[\"<speaker1>\"] = idx+2\n        self.vocab[\"<speaker2>\"] = idx+3\n        self.vocab[\"<pad>\"] = idx+4",
+        "detail": "indonlu.utils.functions",
+        "documentation": {}
+    },
+    {
+        "label": "gen_embeddings",
+        "kind": 2,
+        "importPath": "indonlu.utils.functions",
+        "description": "indonlu.utils.functions",
+        "peekOfCode": "def gen_embeddings(vocab_list, emb_path, emb_dim=None):\n    \"\"\"\n        Generate an initial embedding matrix for `word_dict`.\n        If an embedding file is not given or a word is not in the embedding file,\n        a randomly initialized vector will be used.\n    \"\"\"\n    embeddings = None\n    count, pre_trained = 0, 0\n    vocab_map = {}\n    for i in range(len(vocab_list)):",
+        "detail": "indonlu.utils.functions",
+        "documentation": {}
+    },
+    {
+        "label": "load_vocab",
+        "kind": 2,
+        "importPath": "indonlu.utils.functions",
+        "description": "indonlu.utils.functions",
+        "peekOfCode": "def load_vocab(path):\n    vocab_list = []\n    with open(path, \"r\") as f:\n        for word in f:\n            vocab_list.append(word.replace('\\n',''))\n    vocab_map = {}\n    for i in range(len(vocab_list)):\n        vocab_map[vocab_list[i]] = i\n    return vocab_list, vocab_map\ndef get_model_class(model_type, task):",
+        "detail": "indonlu.utils.functions",
+        "documentation": {}
+    },
+    {
+        "label": "get_model_class",
+        "kind": 2,
+        "importPath": "indonlu.utils.functions",
+        "description": "indonlu.utils.functions",
+        "peekOfCode": "def get_model_class(model_type, task):\n    if 'babert-lite' in model_type:\n        base_cls = AlbertModel\n        if 'sequence_classification' == task:\n            pred_cls = AlbertForSequenceClassification\n        elif 'token_classification' == task:\n            pred_cls = AlbertForWordClassification\n        elif 'multi_label_classification' == task:\n            pred_cls = AlbertForMultiLabelClassification     \n    elif 'xlm-mlm' in model_type:",
+        "detail": "indonlu.utils.functions",
+        "documentation": {}
+    },
+    {
+        "label": "load_word_embedding_model",
+        "kind": 2,
+        "importPath": "indonlu.utils.functions",
+        "description": "indonlu.utils.functions",
+        "peekOfCode": "def load_word_embedding_model(model_type, task, vocab_path, word_tokenizer_class, emb_path, num_labels, lower=True):\n    # Load config\n    config = BertConfig.from_pretrained('bert-base-uncased') \n    # Init word tokenizer\n    word_tokenizer = word_tokenizer_class()\n    # Load vocab\n    _, vocab_map = load_vocab(vocab_path)\n    tokenizer = SimpleTokenizer(vocab_map, word_tokenizer, lower=lower)\n    vocab_list = list(tokenizer.vocab.keys())\n    # Adjust config",
+        "detail": "indonlu.utils.functions",
+        "documentation": {}
+    },
+    {
+        "label": "load_eval_model",
+        "kind": 2,
+        "importPath": "indonlu.utils.functions",
+        "description": "indonlu.utils.functions",
+        "peekOfCode": "def load_eval_model(args):\n    vocab_path = f'./{args[\"model_dir\"]}/{args[\"dataset\"]}/{args[\"experiment_name\"]}/vocab.txt'\n    config_path = f'./{args[\"model_dir\"]}/{args[\"dataset\"]}/{args[\"experiment_name\"]}/config.json'\n    model_path = f'./{args[\"model_dir\"]}/{args[\"dataset\"]}/{args[\"experiment_name\"]}/best_model_0.th'\n    # Load for word2vec and fasttext\n    if 'word2vec' in args['model_type'] or 'fasttext' in args['model_type']:\n        emb_path = args['embedding_path'][args['model_type']]\n        model, tokenizer = load_word_embedding_model(\n            args['model_type'], args['task'], vocab_path, \n            args['word_tokenizer_class'], emb_path, args['num_labels'], lower=args['lower']",
+        "detail": "indonlu.utils.functions",
+        "documentation": {}
+    },
+    {
+        "label": "load_model",
+        "kind": 2,
+        "importPath": "indonlu.utils.functions",
+        "description": "indonlu.utils.functions",
+        "peekOfCode": "def load_model(args):\n    if 'bert-base-multilingual' in args['model_checkpoint']:\n        # bert-base-multilingual-uncased or bert-base-multilingual-cased\n        # Prepare config & tokenizer\n        vocab_path, config_path = None, None\n        tokenizer = BertTokenizer.from_pretrained(args['model_checkpoint'])\n        config = BertConfig.from_pretrained(args['model_checkpoint'])\n        if type(args['num_labels']) == list:\n            config.num_labels = max(args['num_labels'])\n            config.num_labels_list = args['num_labels']",
+        "detail": "indonlu.utils.functions",
+        "documentation": {}
+    },
+    {
+        "label": "emotion_detection_metrics_fn",
+        "kind": 2,
+        "importPath": "indonlu.utils.metrics",
+        "description": "indonlu.utils.metrics",
+        "peekOfCode": "def emotion_detection_metrics_fn(list_hyp, list_label):\n    metrics = {}\n    metrics[\"ACC\"] = accuracy_score(list_label, list_hyp)\n    metrics[\"F1\"] = f1_score(list_label, list_hyp, average='macro')\n    metrics[\"REC\"] = recall_score(list_label, list_hyp, average='macro')\n    metrics[\"PRE\"] = precision_score(list_label, list_hyp, average='macro')\n    return metrics\ndef aspect_extraction_metrics_fn(list_hyp, list_label):\n    metrics = {}\n    acc, pre, rec, f1, tm_pre, tm_rec, tm_f1 = conll_evaluation(list_hyp, list_label)",
+        "detail": "indonlu.utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "aspect_extraction_metrics_fn",
+        "kind": 2,
+        "importPath": "indonlu.utils.metrics",
+        "description": "indonlu.utils.metrics",
+        "peekOfCode": "def aspect_extraction_metrics_fn(list_hyp, list_label):\n    metrics = {}\n    acc, pre, rec, f1, tm_pre, tm_rec, tm_f1 = conll_evaluation(list_hyp, list_label)\n    metrics[\"ACC\"] = acc\n    metrics[\"F1\"] = tm_f1\n    metrics[\"REC\"] = tm_rec\n    metrics[\"PRE\"] = tm_pre\n    return metrics\ndef ner_metrics_fn(list_hyp, list_label):\n    metrics = {}",
+        "detail": "indonlu.utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "ner_metrics_fn",
+        "kind": 2,
+        "importPath": "indonlu.utils.metrics",
+        "description": "indonlu.utils.metrics",
+        "peekOfCode": "def ner_metrics_fn(list_hyp, list_label):\n    metrics = {}\n    acc, pre, rec, f1, tm_pre, tm_rec, tm_f1 = conll_evaluation(list_hyp, list_label)\n    metrics[\"ACC\"] = acc\n    metrics[\"F1\"] = tm_f1\n    metrics[\"REC\"] = tm_rec\n    metrics[\"PRE\"] = tm_pre\n    return metrics\ndef pos_tag_metrics_fn(list_hyp, list_label):\n    metrics = {}",
+        "detail": "indonlu.utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "pos_tag_metrics_fn",
+        "kind": 2,
+        "importPath": "indonlu.utils.metrics",
+        "description": "indonlu.utils.metrics",
+        "peekOfCode": "def pos_tag_metrics_fn(list_hyp, list_label):\n    metrics = {}\n    acc, pre, rec, f1, tm_pre, tm_rec, tm_f1 = conll_evaluation(list_hyp, list_label)\n    metrics[\"ACC\"] = acc\n    metrics[\"F1\"] = tm_f1\n    metrics[\"REC\"] = tm_rec\n    metrics[\"PRE\"] = tm_pre\n    return metrics\ndef entailment_metrics_fn(list_hyp, list_label):\n    metrics = {}",
+        "detail": "indonlu.utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "entailment_metrics_fn",
+        "kind": 2,
+        "importPath": "indonlu.utils.metrics",
+        "description": "indonlu.utils.metrics",
+        "peekOfCode": "def entailment_metrics_fn(list_hyp, list_label):\n    metrics = {}\n    metrics[\"ACC\"] = accuracy_score(list_label, list_hyp)\n    metrics[\"F1\"] = f1_score(list_label, list_hyp, average='macro')\n    metrics[\"REC\"] = recall_score(list_label, list_hyp, average='macro')\n    metrics[\"PRE\"] = precision_score(list_label, list_hyp, average='macro')\n    return metrics\ndef document_sentiment_metrics_fn(list_hyp, list_label):\n    metrics = {}\n    metrics[\"ACC\"] = accuracy_score(list_label, list_hyp)",
+        "detail": "indonlu.utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "document_sentiment_metrics_fn",
+        "kind": 2,
+        "importPath": "indonlu.utils.metrics",
+        "description": "indonlu.utils.metrics",
+        "peekOfCode": "def document_sentiment_metrics_fn(list_hyp, list_label):\n    metrics = {}\n    metrics[\"ACC\"] = accuracy_score(list_label, list_hyp)\n    metrics[\"F1\"] = f1_score(list_label, list_hyp, average='macro')\n    metrics[\"REC\"] = recall_score(list_label, list_hyp, average='macro')\n    metrics[\"PRE\"] = precision_score(list_label, list_hyp, average='macro')\n    return metrics\ndef keyword_extraction_metrics_fn(list_hyp, list_label):\n    metrics = {}\n    acc, pre, rec, f1, tm_pre, tm_rec, tm_f1 = conll_evaluation(list_hyp, list_label)",
+        "detail": "indonlu.utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "keyword_extraction_metrics_fn",
+        "kind": 2,
+        "importPath": "indonlu.utils.metrics",
+        "description": "indonlu.utils.metrics",
+        "peekOfCode": "def keyword_extraction_metrics_fn(list_hyp, list_label):\n    metrics = {}\n    acc, pre, rec, f1, tm_pre, tm_rec, tm_f1 = conll_evaluation(list_hyp, list_label)\n    metrics[\"ACC\"] = acc\n    metrics[\"F1\"] = tm_f1\n    metrics[\"REC\"] = tm_rec\n    metrics[\"PRE\"] = tm_pre\n    return metrics\ndef qa_factoid_metrics_fn(list_hyp, list_label):\n    metrics = {}",
+        "detail": "indonlu.utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "qa_factoid_metrics_fn",
+        "kind": 2,
+        "importPath": "indonlu.utils.metrics",
+        "description": "indonlu.utils.metrics",
+        "peekOfCode": "def qa_factoid_metrics_fn(list_hyp, list_label):\n    metrics = {}\n    acc, pre, rec, f1, tm_pre, tm_rec, tm_f1 = conll_evaluation(list_hyp, list_label)\n    metrics[\"ACC\"] = acc\n    metrics[\"F1\"] = tm_f1\n    metrics[\"REC\"] = tm_rec\n    metrics[\"PRE\"] = tm_pre\n    return metrics\ndef absa_metrics_fn(list_hyp, list_label):\n    # hyp and label are both list (multi label), flatten the list",
+        "detail": "indonlu.utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "absa_metrics_fn",
+        "kind": 2,
+        "importPath": "indonlu.utils.metrics",
+        "description": "indonlu.utils.metrics",
+        "peekOfCode": "def absa_metrics_fn(list_hyp, list_label):\n    # hyp and label are both list (multi label), flatten the list\n    list_hyp = list(itertools.chain.from_iterable(list_hyp))\n    list_label = list(itertools.chain.from_iterable(list_label))\n    metrics = {}\n    metrics[\"ACC\"] = accuracy_score(list_label, list_hyp)\n    metrics[\"F1\"] = f1_score(list_label, list_hyp, average='macro')\n    metrics[\"REC\"] = recall_score(list_label, list_hyp, average='macro')\n    metrics[\"PRE\"] = precision_score(list_label, list_hyp, average='macro')\n    return metrics",
+        "detail": "indonlu.utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "news_categorization_metrics_fn",
+        "kind": 2,
+        "importPath": "indonlu.utils.metrics",
+        "description": "indonlu.utils.metrics",
+        "peekOfCode": "def news_categorization_metrics_fn(list_hyp, list_label):\n    # hyp and label are both list (multi label), flatten the list\n    list_hyp = list(itertools.chain.from_iterable(list_hyp))\n    list_label = list(itertools.chain.from_iterable(list_label))\n    metrics = {}\n    metrics[\"ACC\"] = accuracy_score(list_label, list_hyp)\n    metrics[\"F1\"] = f1_score(list_label, list_hyp, average='macro')\n    metrics[\"REC\"] = recall_score(list_label, list_hyp, average='macro')\n    metrics[\"PRE\"] = precision_score(list_label, list_hyp, average='macro')\n    return metrics",
+        "detail": "indonlu.utils.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "set_seed",
+        "kind": 2,
+        "importPath": "indonlu.main",
+        "description": "indonlu.main",
+        "peekOfCode": "def set_seed(seed):\n    random.seed(seed)\n    np.random.seed(seed)\n    torch.manual_seed(seed)\n    torch.cuda.manual_seed(seed)\n###\n# modelling functions\n###\ndef get_lr(args, optimizer):\n    for param_group in optimizer.param_groups:",
+        "detail": "indonlu.main",
+        "documentation": {}
+    },
+    {
+        "label": "get_lr",
+        "kind": 2,
+        "importPath": "indonlu.main",
+        "description": "indonlu.main",
+        "peekOfCode": "def get_lr(args, optimizer):\n    for param_group in optimizer.param_groups:\n        return param_group['lr']\ndef metrics_to_string(metric_dict):\n    string_list = []\n    for key, value in metric_dict.items():\n        string_list.append('{}:{:.2f}'.format(key, value))\n    return ' '.join(string_list)\n###\n# Training & Evaluation Function",
+        "detail": "indonlu.main",
+        "documentation": {}
+    },
+    {
+        "label": "metrics_to_string",
+        "kind": 2,
+        "importPath": "indonlu.main",
+        "description": "indonlu.main",
+        "peekOfCode": "def metrics_to_string(metric_dict):\n    string_list = []\n    for key, value in metric_dict.items():\n        string_list.append('{}:{:.2f}'.format(key, value))\n    return ' '.join(string_list)\n###\n# Training & Evaluation Function\n###\n# Evaluate function for validation and test\ndef evaluate(model, data_loader, forward_fn, metrics_fn, i2w, is_test=False):",
+        "detail": "indonlu.main",
+        "documentation": {}
+    },
+    {
+        "label": "evaluate",
+        "kind": 2,
+        "importPath": "indonlu.main",
+        "description": "indonlu.main",
+        "peekOfCode": "def evaluate(model, data_loader, forward_fn, metrics_fn, i2w, is_test=False):\n    model.eval()\n    total_loss, total_correct, total_labels = 0, 0, 0\n    list_hyp, list_label, list_seq = [], [], []\n    pbar = tqdm(iter(data_loader), leave=True, total=len(data_loader))\n    for i, batch_data in enumerate(pbar):\n        batch_seq = batch_data[-1]        \n        loss, batch_hyp, batch_label = forward_fn(model, batch_data[:-1], i2w=i2w, device=args['device'])\n        # Calculate total loss\n        test_loss = loss.item()",
+        "detail": "indonlu.main",
+        "documentation": {}
+    },
+    {
+        "label": "train",
+        "kind": 2,
+        "importPath": "indonlu.main",
+        "description": "indonlu.main",
+        "peekOfCode": "def train(model, train_loader, valid_loader, optimizer, forward_fn, metrics_fn, valid_criterion, i2w, n_epochs, evaluate_every=1, early_stop=3, step_size=1, gamma=0.5, model_dir=\"\", exp_id=None):\n    scheduler = StepLR(optimizer, step_size=step_size, gamma=gamma)\n    best_val_metric = -100\n    count_stop = 0\n    for epoch in range(n_epochs):\n        model.train()\n        total_train_loss = 0\n        list_hyp, list_label = [], []\n        train_pbar = tqdm(iter(train_loader), leave=True, total=len(train_loader))\n        for i, batch_data in enumerate(train_pbar):",
+        "detail": "indonlu.main",
+        "documentation": {}
+    },
+    {
+        "label": "set_seed",
+        "kind": 2,
+        "importPath": "indonlu.predict",
+        "description": "indonlu.predict",
+        "peekOfCode": "def set_seed(seed):\n    random.seed(seed)\n    np.random.seed(seed)\n    torch.manual_seed(seed)\n    torch.cuda.manual_seed(seed)\n###\n# modelling functions\n###\ndef get_lr(args, optimizer):\n    for param_group in optimizer.param_groups:",
+        "detail": "indonlu.predict",
+        "documentation": {}
+    },
+    {
+        "label": "get_lr",
+        "kind": 2,
+        "importPath": "indonlu.predict",
+        "description": "indonlu.predict",
+        "peekOfCode": "def get_lr(args, optimizer):\n    for param_group in optimizer.param_groups:\n        return param_group['lr']\ndef metrics_to_string(metric_dict):\n    string_list = []\n    for key, value in metric_dict.items():\n        string_list.append('{}:{:.2f}'.format(key, value))\n    return ' '.join(string_list)\n###\n# Testing Function",
+        "detail": "indonlu.predict",
+        "documentation": {}
+    },
+    {
+        "label": "metrics_to_string",
+        "kind": 2,
+        "importPath": "indonlu.predict",
+        "description": "indonlu.predict",
+        "peekOfCode": "def metrics_to_string(metric_dict):\n    string_list = []\n    for key, value in metric_dict.items():\n        string_list.append('{}:{:.2f}'.format(key, value))\n    return ' '.join(string_list)\n###\n# Testing Function\n###\ndef predict(model, data_loader, forward_fn, metrics_fn, i2w, is_test=False):\n    model.eval()",
+        "detail": "indonlu.predict",
+        "documentation": {}
+    },
+    {
+        "label": "predict",
+        "kind": 2,
+        "importPath": "indonlu.predict",
+        "description": "indonlu.predict",
+        "peekOfCode": "def predict(model, data_loader, forward_fn, metrics_fn, i2w, is_test=False):\n    model.eval()\n    total_loss, total_correct, total_labels = 0, 0, 0\n    list_hyp, list_label, list_seq = [], [], []\n    pbar = tqdm(iter(data_loader), leave=True, total=len(data_loader))\n    for i, batch_data in enumerate(pbar):\n        batch_seq = batch_data[-1]\n        loss, batch_hyp, batch_label = forward_fn(model, batch_data[:-1], i2w=i2w, device=args['device'])\n        # Calculate total loss\n        test_loss = loss.item()",
+        "detail": "indonlu.predict",
         "documentation": {}
     },
     {
@@ -98,7 +2393,16 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def predict_sentiment(text):\n    if not text or pd.isna(text):  # Handle empty or NaN text\n        return 'Tidak tersedia'\n    try:\n        inputs = tokenizer(text, return_tensors=\"pt\", truncation=True, padding=True)\n        with torch.no_grad():\n            outputs = model(**inputs)\n            probs = F.softmax(outputs.logits, dim=-1)\n            pred_class = torch.argmax(probs, dim=1).item()\n            if pred_class <= 1:",
+        "peekOfCode": "def predict_sentiment(text):\n    if not text or pd.isna(text):  # Handle empty or NaN text\n        return 'Tidak tersedia'\n    try:\n        inputs = tokenizer(text, return_tensors=\"pt\", truncation=True, padding=True)\n        # Move inputs to the same device as model\n        inputs = {k: v.to(device) for k, v in inputs.items()}\n        with torch.no_grad():\n            outputs = model(**inputs)\n            probs = F.softmax(outputs.logits, dim=-1)",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "batch_predict_sentiments",
+        "kind": 2,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "def batch_predict_sentiments(texts, batch_size=16):\n    results = []\n    # Handle None or empty list\n    if not texts or len(texts) == 0:\n        return []\n    # Filter out None or NaN texts\n    valid_texts = [t for t in texts if t and not pd.isna(t)]\n    invalid_indices = [i for i, t in enumerate(texts) if not t or pd.isna(t)]\n    for i in range(0, len(valid_texts), batch_size):\n        batch_texts = valid_texts[i:i+batch_size]",
         "detail": "app",
         "documentation": {}
     },
@@ -143,7 +2447,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def visualize():\n    if df is None:\n        return render_template('error.html', message=\"Data Flip tidak tersedia.\")\n    if 'category' not in df.columns:\n        return render_template('error.html', message=\"Kolom 'category' tidak ditemukan di data Flip.\")\n    flip_counts = df['category'].value_counts().to_dict()\n    labels = list(flip_counts.keys())\n    flip_values = list(flip_counts.values())\n    search_query = request.args.get('search', '').lower()\n    filtered_df = df.copy()",
+        "peekOfCode": "def visualize():\n    if df is None:\n        return render_template('error.html', message=\"Data Flip tidak tersedia.\")\n    if 'category' not in df.columns:\n        return render_template('error.html', message=\"Kolom 'category' tidak ditemukan di data Flip.\")\n    if 'category_bert' not in df.columns:\n        return render_template('error.html', message=\"Kolom 'category_bert' tidak ditemukan di data Flip.\")\n    # Get manual sentiment counts\n    flip_counts = df['category'].value_counts().to_dict()\n    # Get BERT sentiment counts",
         "detail": "app",
         "documentation": {}
     },
@@ -152,7 +2456,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def visualize_gojek():\n    if gojek_df is None:\n        return render_template('error.html', message=\"Data Gojek tidak tersedia.\")\n    if 'category' not in gojek_df.columns:\n        return render_template('error.html', message=\"Kolom 'category' tidak ditemukan di data Gojek.\")\n    gojek_counts = gojek_df['category'].value_counts().to_dict()\n    labels = list(gojek_counts.keys())\n    gojek_values = list(gojek_counts.values())\n    search_query = request.args.get('search', '').lower()\n    filtered_df = gojek_df.copy()",
+        "peekOfCode": "def visualize_gojek():\n    if gojek_df is None:\n        return render_template('error.html', message=\"Data Gojek tidak tersedia.\")\n    if 'category' not in gojek_df.columns:\n        return render_template('error.html', message=\"Kolom 'category' tidak ditemukan di data Gojek.\")\n    if 'category_bert' not in gojek_df.columns:\n        return render_template('error.html', message=\"Kolom 'category_bert' tidak ditemukan di data Gojek.\")\n    # Get manual sentiment counts\n    gojek_counts = gojek_df['category'].value_counts().to_dict()\n    # Get BERT sentiment counts",
         "detail": "app",
         "documentation": {}
     },
@@ -161,7 +2465,7 @@
         "kind": 2,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "def visualize_tokopedia():\n    if tokopedia_df is None:\n        return render_template('error.html', message=\"Data Tokopedia tidak tersedia.\")\n    if 'category' not in tokopedia_df.columns:\n        return render_template('error.html', message=\"Kolom 'category' tidak ditemukan di data Tokopedia.\")\n    tokopedia_counts = tokopedia_df['category'].value_counts().to_dict()\n    labels = list(tokopedia_counts.keys())\n    tokopedia_values = list(tokopedia_counts.values())\n    search_query = request.args.get('search', '').lower()\n    filtered_df = tokopedia_df.copy()",
+        "peekOfCode": "def visualize_tokopedia():\n    if tokopedia_df is None:\n        return render_template('error.html', message=\"Data Tokopedia tidak tersedia.\")\n    if 'category' not in tokopedia_df.columns:\n        return render_template('error.html', message=\"Kolom 'category' tidak ditemukan di data Tokopedia.\")\n    if 'category_bert' not in tokopedia_df.columns:\n        return render_template('error.html', message=\"Kolom 'category_bert' tidak ditemukan di data Tokopedia.\")\n    # Get manual sentiment counts\n    tokopedia_counts = tokopedia_df['category'].value_counts().to_dict()\n    # Get BERT sentiment counts",
         "detail": "app",
         "documentation": {}
     },
@@ -170,7 +2474,16 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "app = Flask(__name__)\n# Load BERT model\nmodel_name = \"nlptown/bert-base-multilingual-uncased-sentiment\"\ntokenizer = AutoTokenizer.from_pretrained(model_name)\nmodel = AutoModelForSequenceClassification.from_pretrained(model_name)\n# Fungsi prediksi sentimen pakai BERT\ndef predict_sentiment(text):\n    if not text or pd.isna(text):  # Handle empty or NaN text\n        return 'Tidak tersedia'\n    try:",
+        "peekOfCode": "app = Flask(__name__)\n# Check if GPU is available\ndevice = torch.device('cuda' if torch.cuda.is_available() else 'cpu')\nprint(f\"Using device: {device}\")\n# Load BERT model and move to device (GPU if available)\nmodel_name = \"nlptown/bert-base-multilingual-uncased-sentiment\"\ntokenizer = AutoTokenizer.from_pretrained(model_name)\nmodel = AutoModelForSequenceClassification.from_pretrained(model_name).to(device)\n# Fungsi prediksi sentimen pakai BERT\ndef predict_sentiment(text):",
+        "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "app",
+        "description": "app",
+        "peekOfCode": "device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')\nprint(f\"Using device: {device}\")\n# Load BERT model and move to device (GPU if available)\nmodel_name = \"nlptown/bert-base-multilingual-uncased-sentiment\"\ntokenizer = AutoTokenizer.from_pretrained(model_name)\nmodel = AutoModelForSequenceClassification.from_pretrained(model_name).to(device)\n# Fungsi prediksi sentimen pakai BERT\ndef predict_sentiment(text):\n    if not text or pd.isna(text):  # Handle empty or NaN text\n        return 'Tidak tersedia'",
         "detail": "app",
         "documentation": {}
     },
@@ -179,7 +2492,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "model_name = \"nlptown/bert-base-multilingual-uncased-sentiment\"\ntokenizer = AutoTokenizer.from_pretrained(model_name)\nmodel = AutoModelForSequenceClassification.from_pretrained(model_name)\n# Fungsi prediksi sentimen pakai BERT\ndef predict_sentiment(text):\n    if not text or pd.isna(text):  # Handle empty or NaN text\n        return 'Tidak tersedia'\n    try:\n        inputs = tokenizer(text, return_tensors=\"pt\", truncation=True, padding=True)\n        with torch.no_grad():",
+        "peekOfCode": "model_name = \"nlptown/bert-base-multilingual-uncased-sentiment\"\ntokenizer = AutoTokenizer.from_pretrained(model_name)\nmodel = AutoModelForSequenceClassification.from_pretrained(model_name).to(device)\n# Fungsi prediksi sentimen pakai BERT\ndef predict_sentiment(text):\n    if not text or pd.isna(text):  # Handle empty or NaN text\n        return 'Tidak tersedia'\n    try:\n        inputs = tokenizer(text, return_tensors=\"pt\", truncation=True, padding=True)\n        # Move inputs to the same device as model",
         "detail": "app",
         "documentation": {}
     },
@@ -188,7 +2501,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "tokenizer = AutoTokenizer.from_pretrained(model_name)\nmodel = AutoModelForSequenceClassification.from_pretrained(model_name)\n# Fungsi prediksi sentimen pakai BERT\ndef predict_sentiment(text):\n    if not text or pd.isna(text):  # Handle empty or NaN text\n        return 'Tidak tersedia'\n    try:\n        inputs = tokenizer(text, return_tensors=\"pt\", truncation=True, padding=True)\n        with torch.no_grad():\n            outputs = model(**inputs)",
+        "peekOfCode": "tokenizer = AutoTokenizer.from_pretrained(model_name)\nmodel = AutoModelForSequenceClassification.from_pretrained(model_name).to(device)\n# Fungsi prediksi sentimen pakai BERT\ndef predict_sentiment(text):\n    if not text or pd.isna(text):  # Handle empty or NaN text\n        return 'Tidak tersedia'\n    try:\n        inputs = tokenizer(text, return_tensors=\"pt\", truncation=True, padding=True)\n        # Move inputs to the same device as model\n        inputs = {k: v.to(device) for k, v in inputs.items()}",
         "detail": "app",
         "documentation": {}
     },
@@ -197,7 +2510,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "model = AutoModelForSequenceClassification.from_pretrained(model_name)\n# Fungsi prediksi sentimen pakai BERT\ndef predict_sentiment(text):\n    if not text or pd.isna(text):  # Handle empty or NaN text\n        return 'Tidak tersedia'\n    try:\n        inputs = tokenizer(text, return_tensors=\"pt\", truncation=True, padding=True)\n        with torch.no_grad():\n            outputs = model(**inputs)\n            probs = F.softmax(outputs.logits, dim=-1)",
+        "peekOfCode": "model = AutoModelForSequenceClassification.from_pretrained(model_name).to(device)\n# Fungsi prediksi sentimen pakai BERT\ndef predict_sentiment(text):\n    if not text or pd.isna(text):  # Handle empty or NaN text\n        return 'Tidak tersedia'\n    try:\n        inputs = tokenizer(text, return_tensors=\"pt\", truncation=True, padding=True)\n        # Move inputs to the same device as model\n        inputs = {k: v.to(device) for k, v in inputs.items()}\n        with torch.no_grad():",
         "detail": "app",
         "documentation": {}
     },
@@ -233,7 +2546,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "df = add_category_column(df)\ngojek_df = add_category_column(gojek_df)\ntokopedia_df = add_category_column(tokopedia_df)\n@app.route('/')\ndef index():\n    return render_template('index.html')\n@app.route('/reviews')\ndef reviews():\n    if df is None:\n        return render_template('error.html', message=\"Data Flip tidak tersedia.\")",
+        "peekOfCode": "df = add_category_column(df)\nprint(\"Processing Gojek data...\")\ngojek_df = add_category_column(gojek_df)\nprint(\"Processing Tokopedia data...\")\ntokopedia_df = add_category_column(tokopedia_df)\n@app.route('/')\ndef index():\n    return render_template('index.html')\n@app.route('/reviews')\ndef reviews():",
         "detail": "app",
         "documentation": {}
     },
@@ -242,7 +2555,7 @@
         "kind": 5,
         "importPath": "app",
         "description": "app",
-        "peekOfCode": "gojek_df = add_category_column(gojek_df)\ntokopedia_df = add_category_column(tokopedia_df)\n@app.route('/')\ndef index():\n    return render_template('index.html')\n@app.route('/reviews')\ndef reviews():\n    if df is None:\n        return render_template('error.html', message=\"Data Flip tidak tersedia.\")\n    search_query = request.args.get('search', '').lower()",
+        "peekOfCode": "gojek_df = add_category_column(gojek_df)\nprint(\"Processing Tokopedia data...\")\ntokopedia_df = add_category_column(tokopedia_df)\n@app.route('/')\ndef index():\n    return render_template('index.html')\n@app.route('/reviews')\ndef reviews():\n    if df is None:\n        return render_template('error.html', message=\"Data Flip tidak tersedia.\")",
         "detail": "app",
         "documentation": {}
     },
@@ -253,6 +2566,42 @@
         "description": "app",
         "peekOfCode": "tokopedia_df = add_category_column(tokopedia_df)\n@app.route('/')\ndef index():\n    return render_template('index.html')\n@app.route('/reviews')\ndef reviews():\n    if df is None:\n        return render_template('error.html', message=\"Data Flip tidak tersedia.\")\n    search_query = request.args.get('search', '').lower()\n    filtered_df = df.copy() if df is not None else pd.DataFrame()",
         "detail": "app",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "test_gpu",
+        "description": "test_gpu",
+        "peekOfCode": "model = BertForSequenceClassification.from_pretrained(\n    \"indobenchmark/indobert-base-p1\"  # Ganti dengan path model Anda jika custom\n)\ntokenizer = BertTokenizer.from_pretrained(\"indobenchmark/indobert-base-p1\")\n# Muat weights dari file .pth\nstate_dict = torch.load(\"model/sentiment_model.pth\")\nmodel.load_state_dict(state_dict)\n# Pindahkan ke device (GPU/CPU)\ndevice = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\nmodel.to(device)",
+        "detail": "test_gpu",
+        "documentation": {}
+    },
+    {
+        "label": "tokenizer",
+        "kind": 5,
+        "importPath": "test_gpu",
+        "description": "test_gpu",
+        "peekOfCode": "tokenizer = BertTokenizer.from_pretrained(\"indobenchmark/indobert-base-p1\")\n# Muat weights dari file .pth\nstate_dict = torch.load(\"model/sentiment_model.pth\")\nmodel.load_state_dict(state_dict)\n# Pindahkan ke device (GPU/CPU)\ndevice = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\nmodel.to(device)",
+        "detail": "test_gpu",
+        "documentation": {}
+    },
+    {
+        "label": "state_dict",
+        "kind": 5,
+        "importPath": "test_gpu",
+        "description": "test_gpu",
+        "peekOfCode": "state_dict = torch.load(\"model/sentiment_model.pth\")\nmodel.load_state_dict(state_dict)\n# Pindahkan ke device (GPU/CPU)\ndevice = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\nmodel.to(device)",
+        "detail": "test_gpu",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "test_gpu",
+        "description": "test_gpu",
+        "peekOfCode": "device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\nmodel.to(device)",
+        "detail": "test_gpu",
         "documentation": {}
     }
 ]
