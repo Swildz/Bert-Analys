@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, request
 import pandas as pd
 
 app = Flask(__name__)
@@ -28,8 +28,19 @@ def index():
 @app.route('/reviews')
 def reviews():
     if df is not None:
-        reviews_data = df[['userName', 'score', 'content', 'category']].to_dict(orient='records')
-        return render_template('reviews.html', reviews=reviews_data)
+        search_query = request.args.get('search', '').lower()
+        filtered_df = df
+
+        if search_query:
+            filtered_df = df[
+                df['userName'].str.lower().str.contains(search_query) |
+                df['content'].str.lower().str.contains(search_query) |
+                df['category'].str.lower().str.contains(search_query) |
+                df['score'].astype(str).str.contains(search_query)
+            ]
+
+        reviews_data = filtered_df[['userName', 'score', 'content', 'category']].to_dict(orient='records')
+        return render_template('reviews.html', reviews=reviews_data, search_query=search_query)
     else:
         return "Data tidak tersedia."
 
