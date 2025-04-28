@@ -1,0 +1,13 @@
+flask
+google-play-scraper
+nltk
+torch
+transformers
+sklearn
+emoji
+matplotlib
+seaborn
+pandas
+numpy
+tqdm
+indonlu @ git+https://github.com/indobenchmark/indonlu.git
