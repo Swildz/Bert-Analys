@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analisis Sentimen</title>
+</head>
+<body>
+    <h1>Upload CSV untuk Analisis Sentimen</h1>
+    <form action="/analyze" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".csv">
+        <button type="submit">Analyze</button>
+    </form>
+    <div id="results"></div>
+</body>
+</html>

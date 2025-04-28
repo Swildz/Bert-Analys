@@ -1,0 +1,12 @@
+flask
+google-play-scraper
+nltk
+torch
+transformers
+sklearn
+emoji
+matplotlib
+seaborn
+pandas
+numpy
+tqdm

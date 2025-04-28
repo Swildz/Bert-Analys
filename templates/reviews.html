@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Ulasan Flip</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Daftar Ulasan</h1>
+    <a href="/">← Kembali</a>
+
+    <form method="GET" action="{{ url_for('reviews') }}">
+        <input type="text" name="search" placeholder="Cari ulasan..." value="{{ request.args.get('search', '') }}">
+        <button type="submit">Cari</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nama User</th>
+                <th>Skor</th>
+                <th>Isi Ulasan</th>
+                <th>Kategori</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for review in reviews %}
+            <tr>
+                <td>{{ review['userName'] }}</td>
+                <td>{{ review['score'] }}</td>
+                <td>{{ review['content'] }}</td>
+                <td>{{ review['category'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>

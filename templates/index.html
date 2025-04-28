@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Beranda{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h4 class="mb-0">Analisis Sentimen dari File CSV</h4>
+            </div>
+            <div class="card-body">
+                <form method="POST" action="{{ url_for('analyze') }}" enctype="multipart/form-data">
+                    <div class="mb-3">
+                        <label for="file" class="form-label">Pilih File CSV:</label>
+                        <input class="form-control" type="file" id="file" name="file" accept=".csv" required>
+                        <div class="form-text">File harus berformat CSV dengan kolom 'text' yang berisi teks untuk dianalisis.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Analisis Sentimen</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-header bg-info text-white">
+                <h5 class="mb-0">Petunjuk Penggunaan</h5>
+            </div>
+            <div class="card-body">
+                <ol>
+                    <li>Upload file CSV yang berisi data teks yang ingin dianalisis</li>
+                    <li>Pastikan file CSV memiliki kolom dengan nama 'text'</li>
+                    <li>Sistem akan menganalisis sentimen setiap teks</li>
+                    <li>Hasil analisis dapat diunduh dalam format CSV</li>
+                </ol>
+                <p class="mb-0">Contoh struktur CSV:</p>
+                <pre class="bg-light p-2 mt-2">text
+"Produk ini sangat bagus"
+"Pelayanannya kurang memuaskan"
+"Saya netral saja"</pre>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

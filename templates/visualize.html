@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Visualisasi Sentimen</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Visualisasi Sentimen Review</h1>
+
+    <!-- Grafik Pie -->
+    <h2>Grafik Pie</h2>
+    <canvas id="sentimentChart" width="400" height="400"></canvas>
+
+    <!-- Grafik Batang -->
+    <h2>Grafik Batang</h2>
+    <canvas id="sentimentBarChart" width="400" height="400"></canvas>
+
+    <script>
+        // Grafik Pie
+        const ctxPie = document.getElementById('sentimentChart').getContext('2d');
+        const sentimentChart = new Chart(ctxPie, {
+            type: 'pie',
+            data: {
+                labels: {{ labels|tojson }},
+                datasets: [{
+                    label: 'Jumlah',
+                    data: {{ values|tojson }},
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.7)',
+                        'rgba(255, 206, 86, 0.7)',
+                        'rgba(255, 99, 132, 0.7)'
+                    ]
+                }]
+            }
+        });
+
+        // Grafik Batang
+        const ctxBar = document.getElementById('sentimentBarChart').getContext('2d');
+        const sentimentBarChart = new Chart(ctxBar, {
+            type: 'bar',
+            data: {
+                labels: {{ labels|tojson }},
+                datasets: [{
+                    label: 'Jumlah Review',
+                    data: {{ values|tojson }},
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.7)',
+                        'rgba(255, 206, 86, 0.7)',
+                        'rgba(255, 99, 132, 0.7)'
+                    ],
+                    borderColor: [
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(255, 99, 132, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+    <a href="/">← Kembali</a>
+</body>
+</html>
